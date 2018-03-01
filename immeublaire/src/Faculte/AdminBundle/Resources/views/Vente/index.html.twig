@@ -1,0 +1,132 @@
+{% extends "FaculteAdminBundle::layout.html.twig"%}
+
+{% block content %}
+<div class="page-content">
+    <!-- BEGIN BREADCRUMBS -->
+    <div class="breadcrumbs">
+        <h1>Gestion des Ventes</h1>
+        <ol class="breadcrumb">
+            <li>
+                <a href="{{ path('faculte_admin_homepage') }}">Accueil</a> /
+            </li>
+            <li class="active" >Liste des Ventes
+            </li>
+        </ol>
+    </div>
+    <!-- END BREADCRUMBS -->
+    <!-- BEGIN PAGE BASE CONTENT -->
+    <div class="row">
+        <div class="col-md-12">
+            <!-- BEGIN PORTLET-->
+            <div class="portlet light form-fit bordered">
+                <div class="portlet-title">
+                    <div class="caption font-dark">
+                        <div class="caption">
+                            <i class="fa fa-bookmark font-green "></i>
+                            <span class="caption-subject font-green bold uppercase">Liste des Ventes</span>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <div class="btn-group">
+                            <a class="btn green-haze btn-outline btn-circle btn-sm" href="javascript:;"
+                               data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> Actions
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a href="javascript:;">Activité</a>
+                                </li>
+                                <li class="divider"> </li>
+                                <li>
+                                    <a href="javascript:;">Croisement Offre/Demande</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet light ">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <a  class="btn green-sharp btn-outline  btn-block "  href="{{ path('faculte_admin_ajouter_ventes')}}"><i class="fa fa-plus-circle "> Ventes</i></a>
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <table class="table table-striped table-bordered table-hover" id="sample_1">
+                            <thead>
+                            <tr>
+                                <th>Client</th>
+                                <th>Type</th>
+                                <th>Nombre pieces</th>
+                                <th>Budget</th>
+                                <th>Source</th>
+                                <th>Carte</th>
+                                <th>Commentaire</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% if Ventes is not empty %}
+                            {% for Vente in Ventes %}
+                            <tr>
+                                {% if Vente.particulier is not empty  %}
+                                <td>{{Vente.particulier.nom }}</td>
+                                {% endif %}
+                                {% if Vente.professionel is not empty  %}
+                                    <td>{{Vente.professionel.denomination }}</td>
+                                {% endif %}
+                                {% if Vente.association is not empty  %}
+                                    <td>{{Vente.association.nom }}</td>
+                                {% endif %}
+                                <td>{{Vente.type }}</td>
+                                {% if Vente.numPiece is not empty  %}
+                                <td>{{Vente.numPiece }}</td>
+                                    {% else %}
+                                <td>Vide</td>
+                                {% endif %}
+                                <td>{{Vente.budget }}</td>
+                                <td>{{Vente.source }}</td>
+                                <td>{{Vente.carte }}</td>
+                                <td>{{Vente.commentaire }}</td>
+                                <td>
+                                   <span class="label label-mn label-warning">
+                                                <a href="{{ path('faculte_admin_consulter_vente',{'idV':Vente.id}) }}" style="color:blue;"><i class="fa fa-search font-white"></i></a></span>
+                                    <a href="{{ path('faculte_admin_modifier_ventes',{'idV':Vente.id}) }}" style="color:blue;"> <span class="label label-mn label-primary"><i class="fa fa-edit font-white"></i></span></a>
+
+                                    <a href="#modal-delete{{ Vente.id }}"
+                                       data-toggle="modal"
+                                      style="color:blue;"><span class="label label-mn btn red-thunderbird"><i class="fa fa-trash-o font-white"></i></span></a>
+                                </td>
+                            </tr>
+                                <div id="modal-delete{{ Vente.id }}" class="modal fade" role="dialog" aria-labelledby="myModalLabel10" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                              <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                    <h4 class="modal-title">Supprimer Vente </h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p style="color:red" >Voulez-vous supprimer cette Vente "{{ Vente.type }}"?</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a href="{{ path('faculte_admin_supprimer_ventes',{'idV':Vente.id}) }}" class="btn green"> Supprimer</a>
+                                                    <button class="btn default" data-dismiss="modal" aria-hidden="true">Annuler</button>
+                                                </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            {%endfor  %}
+                            {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- END EXAMPLE TABLE PORTLET-->
+
+            </div>
+            <!-- END PORTLET-->
+        </div>
+    </div>
+    <!-- END PAGE BASE CONTENT -->
+</div>
+{% endblock %}

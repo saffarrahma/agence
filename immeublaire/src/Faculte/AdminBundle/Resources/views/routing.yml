@@ -1,0 +1,278 @@
+faculte_front_InscriptionLigne:
+    path:     /InscriptionLigne
+    defaults: { _controller: FaculteFrontBundle:InscriptionLigne:index }
+faculte_front_Pageformation:
+    path:     /formation
+    defaults: { _controller: FaculteFrontBundle:PageInscription:formation }
+faculte_front_homepage:
+    path:     /
+    defaults: { _controller: FaculteFrontBundle:Publication:index }
+faculte_front_francais1:
+    path:     /francais1
+    defaults: { _controller: FaculteFrontBundle:Default:francais1}
+faculte_front_francais2:
+    path:     /francais2
+    defaults: { _controller: FaculteFrontBundle:Default:francais2}
+faculte_front_francais3:
+    path:     /francais3
+    defaults: { _controller: FaculteFrontBundle:Default:francais3}
+faculte_front_francais4:
+    path:     /francais4
+    defaults: { _controller: FaculteFrontBundle:Default:francais4}
+
+faculte_front_anglais1:
+    path:     /anglais1
+    defaults: { _controller: FaculteFrontBundle:Default:anglais1}
+faculte_front_anglais2:
+    path:     /anglais2
+    defaults: { _controller: FaculteFrontBundle:Default:anglais2}
+faculte_front_anglais3:
+    path:     /anglais3
+    defaults: { _controller: FaculteFrontBundle:Default:anglais3}
+faculte_front_anglais4:
+    path:     /anglais4
+    defaults: { _controller: FaculteFrontBundle:Default:anglais4}
+
+
+faculte_front_allemand1:
+    path:     /allemand1
+    defaults: { _controller: FaculteFrontBundle:Default:allemand1}
+faculte_front_allemand2:
+    path:     /allemand2
+    defaults: { _controller: FaculteFrontBundle:Default:allemand2}
+faculte_front_allemand3:
+    path:     /allemand3
+    defaults: { _controller: FaculteFrontBundle:Default:allemand3}
+faculte_front_allemand4:
+    path:     /allemand4
+    defaults: { _controller: FaculteFrontBundle:Default:allemand4}
+
+
+
+faculte_front_espagnol1:
+    path:     /espagnol1
+    defaults: { _controller: FaculteFrontBundle:Default:espagnol1}
+faculte_front_espagnol2:
+    path:     /espagnol2
+    defaults: { _controller: FaculteFrontBundle:Default:espagnol2}
+faculte_front_espagnol3:
+    path:     /espagnol3
+    defaults: { _controller: FaculteFrontBundle:Default:espagnol3}
+faculte_front_espagnol4:
+    path:     /espagnol4
+    defaults: { _controller: FaculteFrontBundle:Default:espagnol4}
+
+
+faculte_front_italien1:
+    path:     /italien1
+    defaults: { _controller: FaculteFrontBundle:Default:italien1}
+faculte_front_italien2:
+    path:     /italien2
+    defaults: { _controller: FaculteFrontBundle:Default:italien2}
+faculte_front_italien3:
+    path:     /italien3
+    defaults: { _controller: FaculteFrontBundle:Default:italien3}
+faculte_front_italien4:
+    path:     /italien4
+    defaults: { _controller: FaculteFrontBundle:Default:italien4}
+
+faculte_front_chinoi1:
+    path:     /chinoi1
+    defaults: { _controller: FaculteFrontBundle:Default:chinoi1}
+faculte_front_chinoi2:
+    path:     /chinoi2
+    defaults: { _controller: FaculteFrontBundle:Default:chinoi2}
+faculte_front_chinoi3:
+    path:     /chinoi3
+    defaults: { _controller: FaculteFrontBundle:Default:chinoi3}
+faculte_front_chinoi4:
+    path:     /chinoi4
+    defaults: { _controller: FaculteFrontBundle:Default:chinoi4}
+
+
+faculte_front_turc1:
+    path:     /turc1
+    defaults: { _controller: FaculteFrontBundle:Default:turc1}
+faculte_front_turc2:
+    path:     /turc2
+    defaults: { _controller: FaculteFrontBundle:Default:turc2}
+faculte_front_turc3:
+    path:     /turc3
+    defaults: { _controller: FaculteFrontBundle:Default:turc3}
+faculte_front_turc4:
+    path:     /turc4
+    defaults: { _controller: FaculteFrontBundle:Default:turc4}
+
+
+
+
+faculte_front_russe1:
+    path:     /russe1
+    defaults: { _controller: FaculteFrontBundle:Default:russe1}
+faculte_front_russe2:
+    path:     /russe2
+    defaults: { _controller: FaculteFrontBundle:Default:russe2}
+faculte_front_russe3:
+    path:     /russe3
+    defaults: { _controller: FaculteFrontBundle:Default:russe3}
+faculte_front_russe4:
+    path:     /russe4
+    defaults: { _controller: FaculteFrontBundle:Default:russe4}
+
+faculte_front_securite:
+    path:     /securite
+    defaults: { _controller: FaculteFrontBundle:Default:securite}
+
+
+
+faculte_front_Infographie:
+    path:     /Infographie
+    defaults: { _controller: FaculteFrontBundle:Default:Infographie }
+faculte_front_reglement:
+    path:     /reglement
+    defaults: { _controller: FaculteFrontBundle:Default:reglement }
+faculte_front_calendries:
+    path:     /calendries
+    defaults: { _controller: FaculteFrontBundle:Default:calendries }
+faculte_front_soultion:
+    path:     /solution
+    defaults: { _controller: FaculteFrontBundle:Default:solution }
+faculte_front_Photographie:
+    path:     /Photographie
+    defaults: { _controller: FaculteFrontBundle:Default:Photographie}
+faculte_front_Montagevideo:
+    path:     /Montagevideo
+    defaults: { _controller: FaculteFrontBundle:Default:Montagevideo}
+faculte_front_presentation:
+    path:     /presentation
+    defaults: { _controller: FaculteFrontBundle:Default:presentation }
+faculte_front_partenaire:
+    path:     /partenaire
+    defaults: { _controller: FaculteFrontBundle:Default:partenaire }
+faculte_front_formationacc :
+    path:     /formationacc
+    defaults: { _controller: FaculteFrontBundle:Default:formationacc }
+faculte_front_labview:
+    path:     /labview
+    defaults: { _controller: FaculteFrontBundle:Default:labview}
+faculte_front_formationadulte:
+    path:     /formationadulte
+    defaults: { _controller: FaculteFrontBundle:Default:formationadulte}
+faculte_front_PageAccueil:
+    path:     /PageAccueil
+    defaults: { _controller: FaculteFrontBundle:Default:PageAccueil }
+faculte_front_demandeEnregistre:
+    path:     /demandeEnregistre
+    defaults: { _controller: FaculteFrontBundle:Inscription:demandeEnregistre }
+faculte_front_Cameraman:
+    path:     /Cameraman
+    defaults: { _controller: FaculteFrontBundle:Default:Cameraman}
+faculte_front_photoshop:
+    path:     /photoshop
+    defaults: { _controller: FaculteFrontBundle:Default:photoshop}
+faculte_front_Illustrateur:
+    path:     /Illustrateur
+    defaults: { _controller: FaculteFrontBundle:Default:Illustrateur}
+faculte_front_Autocad:
+    path:     /Autocad
+    defaults: { _controller: FaculteFrontBundle:Default:Autocad}
+faculte_front_DsMax:
+    path:     /DsMax
+    defaults: { _controller: FaculteFrontBundle:Default:DsMax}
+faculte_front_Corel:
+    path:     /Corel
+    defaults: { _controller: FaculteFrontBundle:Default:Corel}
+faculte_front_Dremweaver:
+    path:     /Dremweaver
+    defaults: { _controller: FaculteFrontBundle:Default:Dremweaver}
+faculte_front_Indesign:
+    path:     /Indesign
+    defaults: { _controller: FaculteFrontBundle:Default:Indesign}
+faculte_front_Aftereffect:
+    path:     /Aftereffect
+    defaults: { _controller: FaculteFrontBundle:Default:Aftereffect}
+faculte_front_comptabilite:
+    path:     /comptabilite
+    defaults: { _controller: FaculteFrontBundle:Default:comptabilite}
+faculte_front_fiscalite:
+    path:     /fiscalite
+    defaults: { _controller: FaculteFrontBundle:Default:fiscalite}
+faculte_front_finance:
+    path:     /finance
+    defaults: { _controller: FaculteFrontBundle:Default:finance}
+faculte_front_RH:
+    path:     /RH
+    defaults: { _controller: FaculteFrontBundle:Default:RH}
+faculte_front_Business:
+    path:     /Business
+    defaults: { _controller: FaculteFrontBundle:Default:Business}
+faculte_front_FinanceB:
+    path:     /FinanceB
+    defaults: { _controller: FaculteFrontBundle:Default:FinanceB}
+faculte_front_Bancaire:
+    path:     /Bancaire
+    defaults: { _controller: FaculteFrontBundle:Default:Bancaire}
+faculte_front_Assurance:
+    path:     /Assurance
+    defaults: { _controller: FaculteFrontBundle:Default:Assurance}
+faculte_front_Assistante:
+    path:     /Assistante
+    defaults: { _controller: FaculteFrontBundle:Default:Assistante}
+faculte_front_Administration:
+    path:     /Administration
+    defaults: { _controller: FaculteFrontBundle:Default:Administration}
+faculte_front_Android:
+    path:     /Android
+    defaults: { _controller: FaculteFrontBundle:Default:Android}
+faculte_front_Microsoft:
+    path:     /Microsoft
+    defaults: { _controller: FaculteFrontBundle:Default:Microsoft}
+faculte_front_programmation:
+    path:     /programmation
+    defaults: { _controller: FaculteFrontBundle:Default:programmation}
+faculte_front_Accueil:
+    path:     /Accueil
+    defaults: { _controller: FaculteFrontBundle:Default:Accueil}
+faculte_front_Reception:
+    path:     /Reception
+    defaults: { _controller: FaculteFrontBundle:Default:Reception}
+faculte_front_Systeme:
+    path:     /Systeme
+    defaults: { _controller: FaculteFrontBundle:Default:Systeme}
+faculte_front_Transit:
+    path:     /Transit
+    defaults: { _controller: FaculteFrontBundle:Default:Transit}
+faculte_front_Traduction:
+    path:     /Traduction
+    defaults: { _controller: FaculteFrontBundle:Default:Traduction}
+faculte_front_LFC:
+    path:     /LFC
+    defaults: { _controller: FaculteFrontBundle:Default:LFC}
+faculte_front_InscriptionLig:
+    path:     /InscriptionLig
+    defaults: { _controller: FaculteFrontBundle:Default:InscriptionLig}
+faculte_front_Assistante:
+    path:     /Assistante
+    defaults: { _controller: FaculteFrontBundle:Default:Assistante}
+
+
+
+faculte_front_inscription:
+    path:     /inscription
+    defaults: { _controller: FaculteFrontBundle:Inscription:inscription }
+faculte_front_publier:
+    path:     /publier/{idPublier}
+    defaults: { _controller: FaculteFrontBundle:Publication:publier}
+faculte_front_ajouter:
+    path:     /ajouterC/{idPublier}
+    defaults: { _controller: FaculteFrontBundle:Publication:ajouterCommentaire}
+
+
+faculte_front_contact:
+    path:     /contact
+    defaults: { _controller: FaculteFrontBundle:Contact:Contact }
+faculte_front_galerie:
+    path:     /galeries
+    defaults: { _controller: FaculteFrontBundle:galerie:index}
+
+

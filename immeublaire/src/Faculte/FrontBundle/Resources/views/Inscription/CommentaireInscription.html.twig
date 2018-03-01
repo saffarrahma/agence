@@ -1,0 +1,105 @@
+{% extends 'CommentaireInscr.html.twig' %}
+{% block content %}
+
+    <div class="g-hor-divider__dashed--sky-light">
+        <div class="container g-padding-y-80--xs g-padding-y-125--sm" style="margin-top: -17%">
+            <div class="row">
+                <div class="col-sm-6" style="margin-left: 55%">
+                    <div class="wow fadeInRight" data-wow-duration=".3" data-wow-delay=".1s">
+                        <div class=" s-team-v1 g-bg-color--white g-box-shadow__dark-lightest-v2 g-padding-x-30--xs g-padding-x-60--sm g-padding-y-180--xs g-padding-y-100--sm js__tab-eqaul-height-v1"
+                             style="margin-top: 8%">
+                            <div class="cbp js__grid-tabs" style="margin-top: -20%">
+                                <div class="s-tab__grid-v1-item cbp-item -is-active">
+                                    <div class="g-margin-b-20--xs">
+                                        <p class="g-font-size-32--xs g-font-family--playfair" style="color: #00b3ee"><B><i>Personel
+                                                    info</i></B></p>
+                                    </div>
+                                    <div class="portlet-body form ">
+                                        <form class="form-horizontal" enctype="multipart/form-data" action=""
+                                              method="POST" role="form">
+                                            <div class="form-body col-md-12">
+                                                <div class="form-group">
+                                                    <div class="col-md-12 ">
+                                                        {{ form_errors(form) }}
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="exampleInputPassword1"><i><b>Login</b></i></label>
+                                                    {{ form_widget(form2.username,{'attr': {'class': 'form-control','placeholder':'Login' }} ) }}
+                                                </div>
+                                                <div class="form-group col-md-6" style="margin-left: 5%">
+                                                    <label for="exampleInputPassword1"><i><b>Mot de
+                                                                passe</b></i></label>
+                                                    {{ form_widget(form2.plainPassword.first,{'attr': {'class': 'form-control','placeholder':'Mot de passe' }} ) }}
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="exampleInputPassword1"><i><b>Répéter le mot de passe</b></i></label>
+                                                    {{ form_widget(form2.plainPassword.second,{'attr': {'class': 'form-control','placeholder':'Répéter mot de passe' }} ) }}
+                                                </div>
+                                                <div class="form-group col-md-6" style="margin-left: 5%">
+                                                    <label for="exampleInputPassword1"><i><b>Nom</b></i></label>
+                                                    {{ form_widget(form.nom,{'attr': {'class': 'form-control','placeholder':'Nom' }} ) }}
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="exampleInputPassword1"><i><b>Prénom</b></i></label>
+                                                    {{ form_widget(form.prenom,{'attr': {'class': 'form-control','placeholder':'Prénom' }} ) }}
+                                                </div>
+                                                <div class="form-group col-md-6" style="margin-left: 5%">
+                                                    <label for="exampleInputPassword1"><i><b>Email</b></i></label>
+                                                    {{ form_widget(form2.email,{'attr': {'class': 'form-control','placeholder':'Email' }} ) }}
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="exampleInputPassword1"><i><b>Téléphone</b></i></label>
+                                                    {{ form_widget(form.telephone,{'attr': {'class': 'form-control','placeholder':'Téléphone' }} ) }}
+                                                </div>
+                                                {{ form_rest(form) }}
+                                                {{ form_rest(form2) }}
+                                            </div>
+                                            <div class="form-actions">
+                                                <div class="col-md-offset-3 col-md-12"
+                                                     style="margin-left: 55%;margin-top: -12%">
+                                                    <button type="submit" class="btn btn-info">Enregistrer</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-pull-5">
+                    <!-- Masonry Grid -->
+                    <div class="row g-row-col--5 js__masonry" style="margin-left: -350%; margin-top: -50%">
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                            <div class="col-xs-6 col-sm-6 col-md-1 js__masonry-sizer"></div>
+                            <div class="col-xs-6 g-full-width--xs g-margin-b-10--xs js__masonry-item"
+                                 style="width: 30%; margin-top: -32%; ">
+                                <img class="img-responsive g-width-100-percent--xs" style="height: 550px"
+                                     src="{{ asset('bundles/facultefront/img/500x750/parti1.png') }}"
+                                     alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-xs-6 g-full-width--xs g-margin-t-25--md g-margin-b-10--xs js__masonry-item"
+                             style="margin-left: 36.75%;margin-top:-65%;width: 40%">
+                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".2s">
+                                <img class="img-responsive g-width-100-percent--xs"
+                                     src="{{ asset('bundles/facultefront/img/500x750/photo2.png') }}"
+                                     alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-xs-6 g-full-width--xs g-margin-b-10--xs js__masonry-item"
+                             style="margin-left: 36.75%;margin-top: -35.75% ; width: 40%;">
+                            <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".3s">
+                                <img class="img-responsive g-width-100-percent--xs" style="height: 300px"
+                                     src="{{ asset('bundles/facultefront/img/500x750/partie3.png') }}"
+                                     alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Masonry Grid -->
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

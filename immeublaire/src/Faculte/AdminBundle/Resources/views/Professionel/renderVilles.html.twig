@@ -1,0 +1,10 @@
+<select id="faculte_adminbundle_professionel_villes" required="required" name="faculte_adminbundle_professionel[villes]"
+        class="form-control" placeholder="Ville">
+    <option value="" >Choisissez un ville</option>
+    {% if villes is not empty %}
+        {% for Ville in villes %}
+            <option value="{{ Ville.id }}" id="{{ Ville.id }}"
+            >{{ Ville.ville }}</option>
+        {% endfor %}
+    {% endif %}
+</select>

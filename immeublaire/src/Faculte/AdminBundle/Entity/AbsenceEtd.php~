@@ -1,0 +1,128 @@
+<?php
+
+namespace Faculte\AdminBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * AbsenceEtd
+ *
+ * @ORM\Table(name="absence_etd")
+ * @ORM\Entity(repositoryClass="Faculte\AdminBundle\Repository\AbsenceEtdRepository")
+ */
+class AbsenceEtd
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nbAbsence", type="string", length=255)
+     */
+    private $nbAbsence;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Formation", inversedBy="absence_etd")
+     * @ORM\JoinColumn(name="formation_id", referencedColumnName="id")
+     */
+    private $formation;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Matiere", inversedBy="absence_etd")
+     * @ORM\JoinColumn(name="matiere_id", referencedColumnName="id")
+     */
+    private $matiere;
+
+
+    /*******************************************************/
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set nbAbsence
+     *
+     * @param string $nbAbsence
+     *
+     * @return AbsenceEtd
+     */
+    public function setNbAbsence($nbAbsence)
+    {
+        $this->nbAbsence = $nbAbsence;
+
+        return $this;
+    }
+
+    /**
+     * Get nbAbsence
+     *
+     * @return string
+     */
+    public function getNbAbsence()
+    {
+        return $this->nbAbsence;
+    }
+
+    /**
+     * Set formation
+     *
+     * @param \Faculte\AdminBundle\Entity\Formation $formation
+     *
+     * @return AbsenceEtd
+     */
+    public function setFormation(\Faculte\AdminBundle\Entity\Formation $formation = null)
+    {
+        $this->formation = $formation;
+
+        return $this;
+    }
+
+    /**
+     * Get formation
+     *
+     * @return \Faculte\AdminBundle\Entity\Formation
+     */
+    public function getFormation()
+    {
+        return $this->formation;
+    }
+
+    /**
+     * Set matiere
+     *
+     * @param \Faculte\AdminBundle\Entity\Matiere $matiere
+     *
+     * @return AbsenceEtd
+     */
+    public function setMatiere(\Faculte\AdminBundle\Entity\Matiere $matiere = null)
+    {
+        $this->matiere = $matiere;
+
+        return $this;
+    }
+
+    /**
+     * Get matiere
+     *
+     * @return \Faculte\AdminBundle\Entity\Matiere
+     */
+    public function getMatiere()
+    {
+        return $this->matiere;
+    }
+}

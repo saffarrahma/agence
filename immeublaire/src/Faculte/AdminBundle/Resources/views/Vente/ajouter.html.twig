@@ -1,0 +1,179 @@
+{% extends "FaculteAdminBundle::layout.html.twig"%}
+
+{% block content %}
+    <div class="page-content">
+        <!-- BEGIN BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="{{ path('faculte_admin_homepage') }}">Accueil</a> /
+                </li>
+                <li>
+                    <a href="{{ path('faculte_admin_ventes') }}">Liste des Ventes</a> /
+                </li>
+                <li class="active">Ajout d'un Vente</li>
+            </ol>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <!-- BEGIN PAGE BASE CONTENT -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN PORTLET-->
+                <div class="portlet light form-fit bordered">
+                    <div class="portlet-title">
+                        <div class="caption ">
+                            <i class="fa fa-edit font-green  "></i>
+                            <span class="caption-subject font-green ">Formulaire d'ajout</span>
+                        </div>
+                        <div class="actions">
+
+                        </div>
+                    </div><br>
+                    <!-- BEGIN SAMPLE FORM PORTLET-->
+                    <div class="col-md-8 " style="margin-left: 15%">
+                    <div class="alert alert-danger">
+                        <strong> Attention !! </strong> il faut sélectionner un professionel ou un particulier ou une association
+                    </div>
+                    </div>
+
+                    <div class="portlet-body form ">
+                        <form class="form-horizontal" action="" method="POST" role="form">
+                            <div class="form-body col-md-12">
+                                <div class="form-group form-md-line-input form-md-floating-label">
+                                    <div class="col-md-12 text-center" style="color:red;">
+                                        <b>
+                                            {{ form_errors(form) }}
+                                        </b>
+                                    </div>
+                                </div>
+                                <div class="portlet-body form">
+                                    <!-- BEGIN FORM-->
+                                    <div class="form-body">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">Professionel<span style="color: red">*</span></label>
+                                                        <div class="col-md-8.5">
+                                                            <div class="input-group">
+                                                                {{ form_widget(form.professionel,{'attr': {'class': 'form-control' }} ) }}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">Particulier<span style="color: red">*</span></label>
+                                                        <div class="col-md-8.5">
+                                                            <div class="input-group">
+                                                                {{ form_widget(form.particulier,{'attr': {'class': 'form-control' }} ) }}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">Association<span style="color: red">*</span></label>
+                                                        <div class="col-md-8.5">
+                                                            <div class="input-group">
+                                                                {{ form_widget(form.association,{'attr': {'class': 'form-control' }} ) }}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><br>
+                                        <!--/row-->
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Type  <span style="color: red">*</span></label>
+                                                <div class="col-md-8.5">
+                                                    <div class="input-group">
+                                                        {{ form_widget(form.type,{'attr': {'class': 'form-control' }} ) }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/span-->
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Nombre des pièces : <span style="color: red">*</span></label>
+                                                <div class="col-md-8">
+                                                    <div class="input-group">
+                                                        <label class=" control-label">Salon + </label>
+                                                        <div style="margin-top: -15%;margin-left: 45%">{{ form_widget(form.numPiece,{'attr': {'class': 'form-control'}} ) }}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/span-->
+                                        <!--/row-->
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Budget <span style="color: red">*</span></label>
+                                                <div class="col-md-8.5">
+                                                    <div class="input-group">
+                                                        {{ form_widget(form.budget,{'attr': {'class': 'form-control','placeholder':'Budget' }} ) }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/span-->
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Source <span style="color: red">*</span></label>
+                                                <div class="col-md-8.5">
+                                                    <div class="input-group">
+                                                        {{ form_widget(form.source,{'attr': {'class': 'form-control'}} ) }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/span-->
+                                        <!--/row-->
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Carte<span style="color: red">*</span></label>
+                                                <div class="col-md-8.5">
+                                                    <div class="input-group">
+                                                        {{ form_widget(form.carte,{'attr': {'class': 'form-control','placeholder':' localisation ' }} ) }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/span-->
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="col-md-4 control-label">Commentaire<span style="color: red">*</span></label>
+                                                <div class="col-md-8.5">
+                                                    <div class="input-group">
+                                                        {{ form_widget(form.commentaire,{'attr': {'class': 'form-control','placeholder':' Commentaire' }} ) }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{ form_rest(form) }}
+                                    </div>
+                                    <!-- END FORM-->
+                                </div>
+                            </div>
+                            <div class="form-actions ">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button type="submit" class="btn green">Enregistrer</button>
+                                    <button type="button" class="btn default" onclick='location.href="{{ path('faculte_admin_filieres') }}"'>Annuler</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- END SAMPLE FORM PORTLET-->
+                </div>
+                <!-- END PORTLET-->
+            </div>
+        </div>
+        <!-- END PAGE BASE CONTENT -->
+    </div>
+{% endblock %}
+

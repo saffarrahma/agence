@@ -1,0 +1,131 @@
+faculte_admin_homepage:
+    path:     /
+    defaults: { _controller: FaculteAdminBundle:Default:index }
+
+
+
+faculte_admin_professionels:
+    path:     /profesionnels
+    defaults: { _controller: FaculteAdminBundle:Professionel:index }
+faculte_admin_ajouter:
+    path:     /ajouter
+    defaults: { _controller: FaculteAdminBundle:Professionel:ajouterProfessionel }
+faculte_admin_modifier:
+    path:     /modifier/{id}
+    defaults: { _controller: FaculteAdminBundle:Professionel:modifierProfesionnel }
+faculte_admin_supprimer:
+     path:    /supprimer/{id}
+     defaults: {_controller: FaculteAdminBundle:Professionel:supprimerProfessionel}
+faculte_admin_consulter:
+     path:    /consulte/{id}
+     defaults: {_controller: FaculteAdminBundle:Professionel:consulterProfessionel}
+faculte_admin_modifier_professionel_file:
+     path:     /modifier_professionel_file/{id}
+     defaults: { _controller: FaculteAdminBundle:Professionel:modifierProfessionelFile}
+
+
+
+faculte_admin_particuliers:
+    path:     /particuliers
+    defaults: { _controller: FaculteAdminBundle:Particulier:index }
+faculte_admin_modifier_particuliers:
+    path:     /modifier_particuliers/{idPR}
+    defaults: { _controller: FaculteAdminBundle:Particulier:modifierParticulier }
+faculte_admin_supprimer_particuliers:
+     path:    /supprimer_particuliers/{idPR}
+     defaults: {_controller: FaculteAdminBundle:Particulier:supprimerParticulier}
+faculte_admin_consulter_particuliers:
+     path:    /consulte_particuliers/{idPR}
+     defaults: {_controller: FaculteAdminBundle:Particulier:consulterParticulier}
+
+
+
+faculte_admin_associations:
+    path:     /associations
+    defaults: { _controller: FaculteAdminBundle:Association:index }
+faculte_admin_modifier_associations:
+    path:     /modifier_associations/{idA}
+    defaults: { _controller: FaculteAdminBundle:Association:modifierAssociation}
+faculte_admin_supprimer_associations:
+     path:    /supprimer_associations/{idA}
+     defaults: {_controller: FaculteAdminBundle:Association:supprimerAssociation}
+faculte_admin_consulter_associations:
+     path:    /consulte_associations/{idA}
+     defaults: {_controller: FaculteAdminBundle:Association:consulterAssociation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+faculte_admin_regions:
+    path:     /regions
+    defaults: { _controller: FaculteAdminBundle:Default:liste}
+faculte_admin_ajouter_region:
+    path:     /ajouter_region
+    defaults: { _controller: FaculteAdminBundle:Default:ajouterRegion}
+
+faculte_admin_villes:
+    path:     /villes
+    defaults: { _controller: FaculteAdminBundle:Default:listeVille}
+faculte_admin_ajouter_ville:
+    path:     /ajouter_ville
+    defaults: { _controller: FaculteAdminBundle:Default:ajouterVille}
+faculte_admin_render_ville_professionel:
+    path:     /render_villes/professionel
+    defaults: { _controller: FaculteAdminBundle:Professionel:renderVilles}
+
+faculte_admin_locations:
+    path:     /locations
+    defaults: { _controller: FaculteAdminBundle:Location:index}
+faculte_admin_ajouter_locations:
+    path:     /ajouter_locations
+    defaults: { _controller: FaculteAdminBundle:Location:ajouterLocation}
+faculte_admin_modifier_locations:
+    path:     /modifier_locations/{idL}
+    defaults: { _controller: FaculteAdminBundle:Location:modifierLocation}
+faculte_admin_supprimer_locations:
+     path:    /supprimer_locations/{idL}
+     defaults: {_controller: FaculteAdminBundle:Location:supprimerLocation}
+faculte_admin_consulter_Location:
+     path:    /consulte_location/{idL}
+     defaults: {_controller: FaculteAdminBundle:Location:consulterLocation}
+
+
+faculte_admin_ventes:
+    path:     /ventes
+    defaults: { _controller: FaculteAdminBundle:Vente:index}
+faculte_admin_ajouter_ventes:
+    path:     /ajouter_ventes
+    defaults: { _controller: FaculteAdminBundle:Vente:ajouterVente}
+faculte_admin_modifier_ventes:
+    path:     /modifier_ventes/{idV}
+    defaults: { _controller: FaculteAdminBundle:Vente:modifierVente}
+faculte_admin_supprimer_ventes:
+     path:    /supprimer_ventes/{idV}
+     defaults: {_controller: FaculteAdminBundle:Vente:supprimerVente}
+faculte_admin_consulter_vente:
+     path:    /consulte_vente/{idV}
+     defaults: {_controller: FaculteAdminBundle:Vente:consulterVente}

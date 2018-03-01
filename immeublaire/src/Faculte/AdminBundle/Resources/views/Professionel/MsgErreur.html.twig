@@ -1,0 +1,40 @@
+{% extends "FaculteAdminBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="page-content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="{{ path('faculte_admin_homepage') }}">Accueil</a> /
+                        </li>
+                        <li>
+                            <a href="{{ path('faculte_admin_ajouter') }}">Ajout d'un Compte</a>
+                        </li>
+                    </ol>
+                </div>
+                <!-- BEGIN PROFILE CONTENT -->
+                <div class="profile-content">
+                    <div class="col-md-8">
+                    <div class="alert alert-danger">
+                        <strong> Attention !! </strong>
+                        {%if errorPros is defined  %}
+                            {{ errorPros }}
+                        {% endif %}
+                        {%if errorParticulier is defined  %}
+                            {{ errorParticulier }}
+                        {% endif %}
+                        {%if errorAssociation is defined  %}
+                            {{ errorAssociation }}
+                        {% endif %}
+                    </div>
+                    </div>
+                    <!-- END PORTLET -->
+
+                </div>
+            </div>
+        </div>
+        <!-- END PROFILE CONTENT -->
+    </div>
+{% endblock %}

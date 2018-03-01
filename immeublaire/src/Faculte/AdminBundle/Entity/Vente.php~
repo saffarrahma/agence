@@ -1,0 +1,86 @@
+<?php
+
+namespace Faculte\AdminBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Vente
+ *
+ * @ORM\Table(name="vente")
+ * @ORM\Entity(repositoryClass="Faculte\AdminBundle\Repository\VenteRepository")
+ */
+class Vente
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="type", type="string", length=255)
+     */
+    private $type;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="NumPiece", type="integer", nullable=true)
+     */
+    private $numPiece;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="budget", type="string", length=255)
+     */
+    private $budget;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="source", type="string", length=255)
+     */
+    private $source;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="carte", type="string", length=255)
+     */
+    private $carte;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="commentaire", type="text")
+     */
+    private $commentaire;
+
+    /*****************************************/
+    /**
+     * @ORM\ManyToOne(targetEntity="Professionel", inversedBy="vente")
+     * @ORM\JoinColumn(name="professionel_id", referencedColumnName="id")
+     */
+    private $professionel;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Particulier", inversedBy="vente")
+     * @ORM\JoinColumn(name="particulier_id", referencedColumnName="id")
+     */
+    private $particulier;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Association", inversedBy="vente")
+     * @ORM\JoinColumn(name="association_id", referencedColumnName="id")
+     */
+    private $association;
+
+
+}

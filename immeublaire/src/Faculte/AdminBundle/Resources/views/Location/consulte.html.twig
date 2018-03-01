@@ -1,0 +1,75 @@
+{% extends "FaculteAdminBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="page-content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="{{ path('faculte_admin_homepage') }}">Accueil</a> /
+                        </li>
+                        <li>
+                            <a href="{{ path('faculte_admin_locations') }}">Liste des Locations</a> /
+                        </li>
+                        <li class="active"> Profil de location</li>
+                    </ol>
+                </div>
+                <!-- BEGIN PROFILE CONTENT -->
+                <div class="profile-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="portlet light portlet-fit bordered">
+                                <div class="portlet-body">
+                                    <div class="mt-element-list">
+                                        <div class="mt-list-head list-news green-haze" style="background-color: #44b6ae">
+                                                    <div class="list-head-title-container">
+                                                        <h3 class="list-title" style="color: white">Formulaire de location</h3>
+                                                    </div>
+                                        </div>
+                                        <div class="mt-list-container list-default">
+                                            <ul>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Client: </strong>  {% if Location.particulier is not empty  %}
+                                                        {{Location.particulier.nom }}
+                                                    {% endif %}
+                                                    {% if Location.professionel is not empty  %}
+                                                        {{Location.professionel.denomination }}
+                                                    {% endif %}
+                                                    {% if Location.association is not empty  %}
+                                                        {{Location.association.nom }}
+                                                    {% endif %}
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Type: </strong>  {{Location.type}}
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Source : </strong>  {{Location.source }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Nombre des pièces  : </strong>  {{Location.numPiece }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Budget : </strong> {{Location.budget }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Carte : </strong> {{Location.carte }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Commentaire : </strong>  {{Location.commentaire }}<br><br>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PORTLET -->
+
+                </div>
+            </div>
+        </div>
+        <!-- END PROFILE CONTENT -->
+    </div>
+{% endblock %}

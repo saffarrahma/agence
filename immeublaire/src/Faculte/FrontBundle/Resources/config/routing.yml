@@ -1,0 +1,7 @@
+
+faculte_front_homepage:
+    path:     /
+    defaults: { _controller: FaculteFrontBundle:Default:index }
+
+
+

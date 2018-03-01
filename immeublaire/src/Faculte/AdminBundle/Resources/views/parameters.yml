@@ -1,0 +1,15 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: faculte_bd2
+    database_user: root
+    database_password: null
+    mailer_transport: gmail
+    mailer_host: ~
+    mailer_user: 'saffarrahma50@gmail.com'
+    mailer_password: 'r21521043'
+    mailer_auth_mode: login
+    mailer_port: 465
+    mailer_encryption: ssl
+    secret: 66598c6ec046bd491641840292a3d648e0ef8115

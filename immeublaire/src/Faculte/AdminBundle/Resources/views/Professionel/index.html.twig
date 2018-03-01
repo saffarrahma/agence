@@ -1,0 +1,109 @@
+{% extends "FaculteAdminBundle::layout.html.twig"%}
+
+{% block content %}
+    <div class="page-content">
+        <!-- BEGIN BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <h1>Gestion des Professionels</h1>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="{{ path('faculte_admin_homepage') }}">Accueil</a> /
+                </li>
+                <li class="active" >Liste des Professionels
+                </li>
+            </ol>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <!-- BEGIN PAGE BASE CONTENT -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN PORTLET-->
+                <div class="portlet light form-fit bordered">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <div class="caption">
+                                <i class="fa fa-user font-green "></i>
+                                <span class="caption-subject font-green bold uppercase">Liste des Professionels</span>
+                            </div>
+                        </div>
+                        <div class="actions">
+                        </div>
+                    </div>
+                    <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                    <div class="portlet light ">
+                        <div class="portlet-body">
+                            <table class="table table-striped table-bordered table-hover" id="sample_1">
+                                <thead>
+                                <th>Sociéte</th>
+                                <th>Représenté par</th>
+                                <th>Région</th>
+                                <th>Ville</th>
+                                <th>Télephone</th>
+                                <th>Portable</th>
+                                <th>Date de création</th>
+                                <th>Actions</th>
+                                </thead>
+                                <tbody>
+                                {% if Professionels is not empty %}
+                                    {% for Professionel in Professionels %}
+                                        <tr>
+                                            <td>{{Professionel.denomination }}</td>
+                                            <td>{{Professionel.presenter }}</td>
+                                            <td>
+                                                {% for professionel in Professionel.ville %}
+                                                {{professionel.region.region }}
+                                                {%endfor  %}
+                                            </td>
+                                            <td>{{Professionel.telephone }}</td>
+                                            <td>
+                                                {% if Professionel.portable  is empty %}
+                                                    Vide
+                                                {% else %}
+                                                    {{Professionel.portable }}
+                                                {% endif %}</td>
+                                            <td>
+
+                                            <td>{{Professionel.dateCreation|date('d-m-Y') }}</td>
+                                            <td>
+                                                <span class="label label-mn label-warning">
+                                                <a href="{{ path('faculte_admin_consulter',{'id':Professionel.id}) }}" style="color:blue;"><i class="fa fa-search font-white"></i></a></span>
+
+                                                <span class="label label-mn label-primary">
+                                                <a href="{{ path('faculte_admin_modifier',{'id':Professionel.id}) }}" style="color:blue;"><i class="fa fa-edit font-white"></i></a></span>
+
+                                                <a href="#modal-delete{{ Professionel.id}}" data-toggle="modal"
+                                                   style="color:blue;"><span class="label label-mn btn red-thunderbird"><i class="fa fa-trash-o font-white"></i></span></a>
+                                            </td>
+                                        </tr>
+                                        <div id="modal-delete{{ Professionel.id }}" class="modal fade" role="dialog" aria-labelledby="myModalLabel10" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                        <h4 class="modal-title">Supprimer Professionel </h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p style="color:red" >Voulez-vous supprimer cette Professionel "{{ Professionel.denomination }}"?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a href="{{ path('faculte_admin_supprimer',{'id':Professionel.id}) }}" class="btn green"> Supprimer</a>
+                                                        <button class="btn default" data-dismiss="modal" aria-hidden="true">Annuler</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {%endfor  %}
+                                {% endif %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- END EXAMPLE TABLE PORTLET-->
+
+                </div>
+                <!-- END PORTLET-->
+            </div>
+        </div>
+        <!-- END PAGE BASE CONTENT -->
+    </div>
+{% endblock %}

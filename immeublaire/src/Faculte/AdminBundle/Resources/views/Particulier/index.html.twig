@@ -1,0 +1,103 @@
+{% extends "FaculteAdminBundle::layout.html.twig"%}
+
+{% block content %}
+    <div class="page-content">
+        <!-- BEGIN BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <h1>Gestion des Particuliers</h1>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="{{ path('faculte_admin_homepage') }}">Accueil</a> /
+                </li>
+                <li class="active" >Liste des Particuliers
+                </li>
+            </ol>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <!-- BEGIN PAGE BASE CONTENT -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN PORTLET-->
+                <div class="portlet light form-fit bordered">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <div class="caption">
+                                <i class="fa fa-user font-green "></i>
+                                <span class="caption-subject font-green bold uppercase">Liste des Particuliers</span>
+                            </div>
+                        </div>
+                        <div class="actions">
+
+                        </div>
+                    </div>
+                    <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                    <div class="portlet light ">
+                        <div class="portlet-body">
+                            <table class="table table-striped table-bordered table-hover" id="sample_1">
+                                <thead>
+                                <th>CIN</th>
+                                <th>Nom et Prénom</th>
+                                <th>Région</th>
+                                <th>Ville</th>
+                                <th>Portable</th>
+                                <th>Date de création</th>
+                                <th>Actions</th>
+                                </thead>
+                                <tbody>
+                                {% if Particuliers is not empty %}
+                                    {% for Particulier in Particuliers %}
+                                        <tr>
+                                            <td>{{Particulier.cin }}</td>
+                                            <td>{{Particulier.nom }}  {{Particulier.prenom }}</td>
+                                            <td>{{Particulier.region }}</td>
+                                            <td>{{Particulier.ville}}</td>
+                                            <td>
+                                                {% if Particulier.portable  is empty %}
+                                                    Vide
+                                                {% else %}
+                                                    {{Particulier.portable }}
+                                                {% endif %}</td>
+                                            <td>{{Particulier.dateCreation|date('d-m-Y') }}</td>
+                                            <td>
+                                                <span class="label label-mn label-warning">
+                                                <a href="{{ path('faculte_admin_consulter_particuliers',{'idPR':Particulier.id}) }}" style="color:blue;"><i class="fa fa-search font-white"></i></a></span>
+
+                                                <span class="label label-mn label-primary">
+                                                <a href="{{ path('faculte_admin_modifier_particuliers',{'idPR':Particulier.id}) }}" style="color:blue;"><i class="fa fa-edit font-white"></i></a></span>
+
+                                                <a href="#modal-delete{{ Particulier.id}}" data-toggle="modal"
+                                                   style="color:blue;"><span class="label label-mn btn red-thunderbird"><i class="fa fa-trash-o font-white"></i></span></a>
+                                            </td>
+                                        </tr>
+                                        <div id="modal-delete{{ Particulier.id }}" class="modal fade" role="dialog" aria-labelledby="myModalLabel10" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                        <h4 class="modal-title">Supprimer Particulier </h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p style="color:red" >Voulez-vous supprimer cette Particulier "{{ Particulier.nom }} {{ Particulier.prenom }}"?</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a href="{{ path('faculte_admin_supprimer_particuliers',{'idPR':Particulier.id}) }}" class="btn green"> Supprimer</a>
+                                                        <button class="btn default" data-dismiss="modal" aria-hidden="true">Annuler</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {%endfor  %}
+                                {% endif %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- END EXAMPLE TABLE PORTLET-->
+
+                </div>
+                <!-- END PORTLET-->
+            </div>
+        </div>
+        <!-- END PAGE BASE CONTENT -->
+    </div>
+{% endblock %}

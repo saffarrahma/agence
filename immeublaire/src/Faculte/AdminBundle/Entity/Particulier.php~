@@ -1,0 +1,143 @@
+<?php
+
+namespace Faculte\AdminBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Particulier
+ *
+ * @ORM\Table(name="particulier")
+ * @ORM\Entity(repositoryClass="Faculte\AdminBundle\Repository\ParticulierRepository")
+ */
+class Particulier
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="cin", type="string", length=255)
+     */
+    private $cin;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=255)
+     */
+    private $nom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="prenom", type="string", length=255)
+     */
+    private $prenom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="ville", type="string", length=255)
+     */
+    private $ville;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="adresse", type="string", length=255)
+     */
+    private $adresse;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="region", type="string", length=255)
+     */
+    private $region;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="portable", type="string", length=255)
+     */
+    private $portable;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="telephone", type="string", length=255, nullable=true)
+     */
+    private $telephone;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="lieuNaissance", type="string", length=255)
+     */
+    private $lieuNaissance;
+
+    /**
+     * @var \string
+     *
+     * @ORM\Column(name="DateNaissance", type="string")
+     */
+    private $dateNaissance;
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_creation", type="datetime")
+     */
+    private $dateCreation;
+
+         /*****************************/
+    /**
+     * @ORM\OneToOne(targetEntity="User")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     */
+    private $user;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Location", mappedBy="particulier",cascade={"remove"})
+     *
+     */
+    private $locations;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Vente", mappedBy="particulier",cascade={"remove"})
+     *
+     */
+    private $ventes;
+
+
+    /**
+     * Convert object to string
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return (string)$this->getNom();
+
+    }
+
+
+
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->locations = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+}

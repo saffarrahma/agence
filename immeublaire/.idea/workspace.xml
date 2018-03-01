@@ -1,0 +1,1434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="87427809-5de1-4b77-8227-5569afb3a0f4" name="Default" comment="" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="pfeProjet" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/layout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="205" column="4" lean-forward="false" selection-start-line="205" selection-start-column="4" selection-end-line="205" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1071">
+              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Default/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfessionelController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/ProfessionelController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3589">
+              <caret line="268" column="56" lean-forward="false" selection-start-line="268" selection-start-column="56" selection-end-line="268" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajouter.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Vente/ajouter.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1989">
+              <caret line="117" column="147" lean-forward="false" selection-start-line="117" selection-start-column="147" selection-end-line="117" selection-end-column="147" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VenteType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Form/VenteType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+              <folding>
+                <element signature="e#44#84#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Front.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Front.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>01</find>
+      <find>Keynote</find>
+      <find>AuthentificationHandler</find>
+      <find>&lt;img src=&quot;assets/img/slider/5.jpg&quot;</find>
+      <find>img</find>
+      <find>jquery.backstretch.min.js</find>
+      <find>img/</find>
+      <find>backstretch</find>
+      <find>assets/img/slider/5.jpg</find>
+      <find>5.jpg</find>
+      <find>ense</find>
+      <find>enseigna</find>
+      <find>Marcus Doe</find>
+      <find>YOUR ACTIVITY</find>
+      <find>css</find>
+      <find>Person Info</find>
+      <find>Form Actions On Bottom</find>
+      <find>errorUsername</find>
+      <find>encryption</find>
+      <find>MY LIST</find>
+      <find>idp</find>
+      <find>setpub</find>
+      <find>registration</find>
+      <find>faculte_admin_render_niveau_groupe</find>
+      <find>getde</find>
+      <find>Bootstrap Modal Demos</find>
+      <find>paye</find>
+      <find>Tools</find>
+      <find>js</find>
+      <find>compo</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&lt;link href=&quot;{{ asset ('bundles/faculteadmin/</replace>
+      <replace>.css') }}&quot;</replace>
+      <replace>&lt;link href=&quot;{{ asset('bundles/faculteadmin</replace>
+      <replace>&lt;script src=&quot;..</replace>
+      <replace>&lt;script src=&quot;{{ asset('bundles/faculteadmin</replace>
+      <replace>.js') }}</replace>
+      <replace>.css') }}</replace>
+      <replace>Aucune donnée disponible</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\EtudiantBundle\Resources\public</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Resources\views\EmploiTemps</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Entity</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Resources\public\global\plugins\datatables</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Resources\public</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Resources</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\FrontBundle\Resources\public</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\vendor\friendsofsymfony\user-bundle</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Controller</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\vendor\friendsofsymfony</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\vendor</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\EnseignantBundle\Resources\public</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\EnseignantBundle</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte\AdminBundle\Resources\views</dir>
+      <dir>C:\Users\rahmaa\Desktop\Les templates\megakit\HTML\img</dir>
+      <dir>C:\wamp64\www\faculte\pfeProjet\src\Faculte</dir>
+    </dirStrings>
+  </component>
+  <component name="FrameworkCommandLineHistory">
+    <commandsHistory>
+      <command text="s doctrine:generate:entities FaculteAdminBundle:Location" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entities  FaculteAdminBundle:Location" />
+      <command text="s doctrine:generate:entities FaculteAdminBundle:Particulier" />
+      <command text="s doctrine:generate:entities FaculteAdminBundle:Association" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entity FaculteAdminBundle:Vente" />
+      <command text="s doctrine:generate:form FaculteAdminBundle:Vente" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entities FaculteAdminBundle:Particulier" />
+      <command text="s doctrine:generate:entities FaculteAdminBundle:Professionel" />
+      <command text="s doctrine:generate:entities  FaculteAdminBundle:Association" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entities FaculteAdminBundle:Vente" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entities FaculteAdminBundle:Vente" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entities FaculteAdminBundle:Vente" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entities FaculteAdminBundle:Vente" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:entity" />
+      <command text="s doctrine:generate:form FaculteAdminBundle:Zone" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s assets:install " />
+    </commandsHistory>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Repository/AssociationRepository.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Association/MsgErreurModif.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/AssociationController.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/ParticulierController.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Particulier/MsgErreurModif.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Professionel/MsgErreurModif.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Association/modifier.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Professionel/contenuEmail.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Particulier/contenuEmail.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Region/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Form/VilleType.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Ville/ajouter.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Region/ajouter.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Ville/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Region.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Form/GroupeType.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Form/ProfessionelType.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Professionel/consulte.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Professionel/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Ville.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/ProfessionelController.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Professionel/renderVilles.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Location.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Form/LocationType.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Form/ProfessionelEditType.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Professionel/modifier.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/LocationController.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Location/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/VenteController.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Association.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Professionel.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Particulier.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Vente.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Location/consulte.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Location/modifier.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Professionel/ajouter.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Vente/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Vente/consulte.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Vente/modifier.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Location/ajouter.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Vente/ajouter.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Form/VenteType.php" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/DefaultController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-7" />
+    <option name="y" value="1" />
+    <option name="width" value="1378" />
+    <option name="height" value="734" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="immeublaire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="immeublaire" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="immeublaire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="immeublaire" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="immeublaire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="immeublaire" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="immeublaire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="immeublaire" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Faculte" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="immeublaire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="immeublaire" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Faculte" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="immeublaire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="immeublaire" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Faculte" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="immeublaire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="immeublaire" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Faculte" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="immeublaire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="immeublaire" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Faculte" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="immeublaire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="immeublaire" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Faculte" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AdminBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Default" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="immeublaire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="immeublaire" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Faculte" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="immeublaire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="immeublaire" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Faculte" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="immeublaire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="immeublaire" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Faculte" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FrontBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="immeublaire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="immeublaire" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="immeublaire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="immeublaire" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bundles" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="immeublaire" type="b2602c69:ProjectViewProjectNode" />
+              <item name="immeublaire" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bundles" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="faculteadmin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="SearchEverywhereHistoryKey" value="M&#9;FILE&#9;file://C:/wamp64/www/faculte/pfeProjet/src/Faculte/AdminBundle/Resources/views/Etudiant/ajouter.html.twig" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\agence\immeublaire\src\Faculte\AdminBundle\Controller" />
+      <recent name="C:\wamp64\www\agence\immeublaire\src\Faculte\AdminBundle\Resources\views" />
+      <recent name="C:\wamp64\www\agence\immeublaire\src\Faculte\AdminBundle\Resources\views\Location" />
+      <recent name="C:\wamp64\www\agence\immeublaire\src\Faculte\AdminBundle\Resources\views\Professionel" />
+      <recent name="C:\wamp64\www\agence\immeublaire\src\Faculte\AdminBundle\Resources\views\Particulier" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\faculte\pfeProjet\app\Resources\views\default" />
+      <recent name="C:\wamp64\www\faculte\pfeProjet\src\Faculte\FrontBundle\Resources\views\Inscription" />
+      <recent name="C:\wamp64\www\faculte\pfeProjet\app\Resources\views" />
+      <recent name="C:\wamp64\www\faculte\pfeProjet\src\Faculte\FrontBundle\Resources\views" />
+      <recent name="C:\wamp64\www\f\pfeProjet\app\Resources\views" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87427809-5de1-4b77-8227-5569afb3a0f4" name="Default" comment="" />
+      <created>1485896441551</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1485896441551</updated>
+      <workItem from="1485896443621" duration="6845000" />
+      <workItem from="1485977772532" duration="1284000" />
+      <workItem from="1485979106547" duration="19162000" />
+      <workItem from="1486051993291" duration="11695000" />
+      <workItem from="1486063984049" duration="18900000" />
+      <workItem from="1486144402819" duration="28758000" />
+      <workItem from="1486262774413" duration="8300000" />
+      <workItem from="1486300776950" duration="8322000" />
+      <workItem from="1486311052551" duration="8885000" />
+      <workItem from="1486386599137" duration="10876000" />
+      <workItem from="1486398949032" duration="180000" />
+      <workItem from="1486399433673" duration="16447000" />
+      <workItem from="1486463962228" duration="13599000" />
+      <workItem from="1486486646741" duration="11265000" />
+      <workItem from="1486555902820" duration="281000" />
+      <workItem from="1486571519830" duration="12891000" />
+      <workItem from="1486637234942" duration="39381000" />
+      <workItem from="1486806988047" duration="7042000" />
+      <workItem from="1486974166175" duration="5119000" />
+      <workItem from="1487061512887" duration="597000" />
+      <workItem from="1487076865542" duration="9828000" />
+      <workItem from="1487147674783" duration="11506000" />
+      <workItem from="1487239632827" duration="133000" />
+      <workItem from="1487244818262" duration="38000" />
+      <workItem from="1487245003907" duration="2705000" />
+      <workItem from="1487260766006" duration="164000" />
+      <workItem from="1487316305623" duration="9579000" />
+      <workItem from="1487416077657" duration="787000" />
+      <workItem from="1487578873496" duration="1856000" />
+      <workItem from="1487757304256" duration="2605000" />
+      <workItem from="1487759990438" duration="14542000" />
+      <workItem from="1487780846113" duration="2279000" />
+      <workItem from="1487784862251" duration="6896000" />
+      <workItem from="1487847096906" duration="27570000" />
+      <workItem from="1487928141663" duration="14480000" />
+      <workItem from="1488037105823" duration="12164000" />
+      <workItem from="1488100713849" duration="3213000" />
+      <workItem from="1488143382210" duration="102000" />
+      <workItem from="1488185091856" duration="453000" />
+      <workItem from="1488185676272" duration="4789000" />
+      <workItem from="1488192347227" duration="26536000" />
+      <workItem from="1488280883445" duration="20295000" />
+      <workItem from="1488361843958" duration="9529000" />
+      <workItem from="1488373544794" duration="24008000" />
+      <workItem from="1488449010641" duration="28534000" />
+      <workItem from="1488614729951" duration="2269000" />
+      <workItem from="1488617397588" duration="5762000" />
+      <workItem from="1488624673994" duration="4689000" />
+      <workItem from="1488785670739" duration="4853000" />
+      <workItem from="1488879509526" duration="30243000" />
+      <workItem from="1488968373322" duration="9933000" />
+      <workItem from="1488986903723" duration="1141000" />
+      <workItem from="1488989053264" duration="11392000" />
+      <workItem from="1489055392474" duration="19079000" />
+      <workItem from="1489139746311" duration="28458000" />
+      <workItem from="1489236437775" duration="5756000" />
+      <workItem from="1489245193751" duration="10326000" />
+      <workItem from="1489256326405" duration="1596000" />
+      <workItem from="1489258164957" duration="408000" />
+      <workItem from="1489259117686" duration="20702000" />
+      <workItem from="1489315497184" duration="19084000" />
+      <workItem from="1489345481599" duration="8648000" />
+      <workItem from="1489396341204" duration="3699000" />
+      <workItem from="1489400969301" duration="12580000" />
+      <workItem from="1489416837097" duration="22933000" />
+      <workItem from="1489482845607" duration="27328000" />
+      <workItem from="1489517717139" duration="7696000" />
+      <workItem from="1489573078775" duration="10900000" />
+      <workItem from="1489596688161" duration="8105000" />
+      <workItem from="1489611408498" duration="2413000" />
+      <workItem from="1489782965247" duration="5197000" />
+      <workItem from="1489822858039" duration="3303000" />
+      <workItem from="1489830065954" duration="375000" />
+      <workItem from="1489863779643" duration="592000" />
+      <workItem from="1490027606668" duration="151000" />
+      <workItem from="1490086365034" duration="34131000" />
+      <workItem from="1490170712943" duration="36395000" />
+      <workItem from="1490259929164" duration="36979000" />
+      <workItem from="1490343010821" duration="10950000" />
+      <workItem from="1490434926096" duration="2462000" />
+      <workItem from="1490437953617" duration="13540000" />
+      <workItem from="1490452211469" duration="22804000" />
+      <workItem from="1490519413947" duration="7632000" />
+      <workItem from="1490523545862" duration="15608000" />
+      <workItem from="1490541087118" duration="15355000" />
+      <workItem from="1490604844477" duration="9668000" />
+      <workItem from="1490625113791" duration="6280000" />
+      <workItem from="1490690241741" duration="3106000" />
+      <workItem from="1490776370351" duration="37306000" />
+      <workItem from="1490863761928" duration="13136000" />
+      <workItem from="1490882545855" duration="674000" />
+      <workItem from="1490896179727" duration="10013000" />
+      <workItem from="1490985248479" duration="2240000" />
+      <workItem from="1491029501065" duration="9152000" />
+      <workItem from="1491039154707" duration="792000" />
+      <workItem from="1491043899368" duration="2956000" />
+      <workItem from="1491047123649" duration="1988000" />
+      <workItem from="1491212031429" duration="7653000" />
+      <workItem from="1491218770671" duration="20633000" />
+      <workItem from="1491290850564" duration="49455000" />
+      <workItem from="1491377761840" duration="47176000" />
+      <workItem from="1491469943191" duration="10224000" />
+      <workItem from="1491483286860" duration="14369000" />
+      <workItem from="1491641007021" duration="18310000" />
+      <workItem from="1491684763036" duration="559000" />
+      <workItem from="1491687239408" duration="3635000" />
+      <workItem from="1491747565101" duration="2576000" />
+      <workItem from="1491754785255" duration="146000" />
+      <workItem from="1491755329645" duration="14501000" />
+      <workItem from="1491813234485" duration="1080000" />
+      <workItem from="1492177410757" duration="1716000" />
+      <workItem from="1492199104671" duration="642000" />
+      <workItem from="1492238087585" duration="28381000" />
+      <workItem from="1492368409354" duration="8617000" />
+      <workItem from="1492501899795" duration="1124000" />
+      <workItem from="1492677148447" duration="913000" />
+      <workItem from="1492802288647" duration="513000" />
+      <workItem from="1492854308128" duration="669000" />
+      <workItem from="1493045379715" duration="596000" />
+      <workItem from="1493148649312" duration="711000" />
+      <workItem from="1493192202879" duration="1316000" />
+      <workItem from="1493228285830" duration="11750000" />
+      <workItem from="1493285211363" duration="4054000" />
+      <workItem from="1493298595385" duration="3529000" />
+      <workItem from="1493717314764" duration="3610000" />
+      <workItem from="1494317526471" duration="4865000" />
+      <workItem from="1494670766567" duration="4847000" />
+      <workItem from="1494676191150" duration="55000" />
+      <workItem from="1494676873081" duration="21720000" />
+      <workItem from="1495194220156" duration="803000" />
+      <workItem from="1495226599130" duration="668000" />
+      <workItem from="1496040535753" duration="26198000" />
+      <workItem from="1496125437542" duration="11833000" />
+      <workItem from="1496142144052" duration="135637000" />
+      <workItem from="1496819465026" duration="21594000" />
+      <workItem from="1496905342353" duration="4056000" />
+      <workItem from="1496911613150" duration="20904000" />
+      <workItem from="1496999564817" duration="29722000" />
+      <workItem from="1497513103993" duration="21451000" />
+      <workItem from="1497553964451" duration="8855000" />
+      <workItem from="1497564866291" duration="5588000" />
+      <workItem from="1497681814203" duration="14271000" />
+      <workItem from="1498031569434" duration="5665000" />
+      <workItem from="1498033867216" duration="15578000" />
+      <workItem from="1498114279631" duration="3884000" />
+      <workItem from="1498635775094" duration="402000" />
+      <workItem from="1498636894931" duration="4086000" />
+      <workItem from="1498642182638" duration="4028000" />
+      <workItem from="1498646314205" duration="10188000" />
+      <workItem from="1498719840896" duration="16208000" />
+      <workItem from="1498808136332" duration="22673000" />
+      <workItem from="1498896808893" duration="9079000" />
+      <workItem from="1499067056568" duration="1168000" />
+      <workItem from="1499065549338" duration="16114000" />
+      <workItem from="1499150842704" duration="21334000" />
+      <workItem from="1499236622020" duration="4739000" />
+      <workItem from="1499241956245" duration="9311000" />
+      <workItem from="1499260228698" duration="68000" />
+      <workItem from="1499260927358" duration="1435000" />
+      <workItem from="1499275752258" duration="9205000" />
+      <workItem from="1499331689620" duration="11061000" />
+      <workItem from="1499409707608" duration="19416000" />
+      <workItem from="1499498816435" duration="1648000" />
+      <workItem from="1499496930076" duration="6465000" />
+      <workItem from="1499673093501" duration="844000" />
+      <workItem from="1499675437934" duration="1196000" />
+      <workItem from="1499677301172" duration="677000" />
+      <workItem from="1499675033632" duration="1054000" />
+      <workItem from="1499676922572" duration="1896000" />
+      <workItem from="1499679207088" duration="1086000" />
+      <workItem from="1499682596469" duration="1597000" />
+      <workItem from="1499684539253" duration="1829000" />
+      <workItem from="1499686405409" duration="1969000" />
+      <workItem from="1499688484604" duration="2114000" />
+      <workItem from="1499690630576" duration="2095000" />
+      <workItem from="1499692757454" duration="1679000" />
+      <workItem from="1499755062508" duration="1629000" />
+      <workItem from="1499756905672" duration="1320000" />
+      <workItem from="1499758295950" duration="1904000" />
+      <workItem from="1499760240040" duration="1792000" />
+      <workItem from="1499762063620" duration="1784000" />
+      <workItem from="1499764166762" duration="1901000" />
+      <workItem from="1499766225521" duration="723000" />
+      <workItem from="1499768862085" duration="1854000" />
+      <workItem from="1499770921482" duration="1973000" />
+      <workItem from="1499773022257" duration="1810000" />
+      <workItem from="1499774858735" duration="1341000" />
+      <workItem from="1499776679942" duration="1861000" />
+      <workItem from="1499778586055" duration="1000000" />
+      <workItem from="1499843336298" duration="753000" />
+      <workItem from="1499844897943" duration="1786000" />
+      <workItem from="1499847144941" duration="1589000" />
+      <workItem from="1499849449172" duration="1828000" />
+      <workItem from="1499851343380" duration="1185000" />
+      <workItem from="1499853272696" duration="609000" />
+      <workItem from="1499856015035" duration="1833000" />
+      <workItem from="1499857897019" duration="1597000" />
+      <workItem from="1499860950757" duration="1787000" />
+      <workItem from="1499862762286" duration="1898000" />
+      <workItem from="1499864750511" duration="1817000" />
+      <workItem from="1499866598483" duration="1453000" />
+      <workItem from="1499928533384" duration="1213000" />
+      <workItem from="1499930188811" duration="869000" />
+      <workItem from="1499932126709" duration="1799000" />
+      <workItem from="1499933951846" duration="1799000" />
+      <workItem from="1499935794473" duration="1623000" />
+      <workItem from="1499937746284" duration="607000" />
+      <workItem from="1499943922885" duration="1898000" />
+      <workItem from="1499946471875" duration="1878000" />
+      <workItem from="1499948386908" duration="1819000" />
+      <workItem from="1499950254893" duration="1799000" />
+      <workItem from="1499952111048" duration="2051000" />
+      <workItem from="1500014532098" duration="1769000" />
+      <workItem from="1500016354194" duration="1801000" />
+      <workItem from="1500018184190" duration="1860000" />
+      <workItem from="1500020074366" duration="1482000" />
+      <workItem from="1500025197259" duration="821000" />
+      <workItem from="1500022441801" duration="1901000" />
+      <workItem from="1500024379018" duration="1262000" />
+      <workItem from="1500026064153" duration="1065000" />
+      <workItem from="1500030760097" duration="605000" />
+      <workItem from="1500037884778" duration="417000" />
+      <workItem from="1500034723101" duration="1817000" />
+      <workItem from="1500036575413" duration="1285000" />
+      <workItem from="1500038916631" duration="1291000" />
+      <workItem from="1500099886295" duration="1719000" />
+      <workItem from="1500101670110" duration="2168000" />
+      <workItem from="1500103871994" duration="1807000" />
+      <workItem from="1500105718536" duration="848000" />
+      <workItem from="1500110251733" duration="1384000" />
+      <workItem from="1500112089069" duration="1844000" />
+      <workItem from="1500113968090" duration="2000000" />
+      <workItem from="1500116005259" duration="1986000" />
+      <workItem from="1500118029740" duration="1336000" />
+      <workItem from="1500277894030" duration="2129000" />
+      <workItem from="1500280172336" duration="1782000" />
+      <workItem from="1500282036494" duration="1889000" />
+      <workItem from="1500283973419" duration="1127000" />
+      <workItem from="1500289062178" duration="1832000" />
+      <workItem from="1500290928958" duration="1961000" />
+      <workItem from="1500292930999" duration="1797000" />
+      <workItem from="1500294769997" duration="1869000" />
+      <workItem from="1500296675285" duration="1780000" />
+      <workItem from="1500298495937" duration="1159000" />
+      <workItem from="1500361703764" duration="1900000" />
+      <workItem from="1500363648707" duration="1335000" />
+      <workItem from="1500365569094" duration="1927000" />
+      <workItem from="1500367537696" duration="1181000" />
+      <workItem from="1500374428821" duration="1414000" />
+      <workItem from="1500376847167" duration="2320000" />
+      <workItem from="1500379330774" duration="1996000" />
+      <workItem from="1500381389751" duration="1990000" />
+      <workItem from="1500383475261" duration="2025000" />
+      <workItem from="1500385538254" duration="762000" />
+      <workItem from="1500446852282" duration="1669000" />
+      <workItem from="1500453176400" duration="1805000" />
+      <workItem from="1500455007657" duration="1464000" />
+      <workItem from="1500456855372" duration="868000" />
+      <workItem from="1500459820721" duration="1976000" />
+      <workItem from="1500463006657" duration="1847000" />
+      <workItem from="1500464980717" duration="1096000" />
+      <workItem from="1500467070912" duration="1808000" />
+      <workItem from="1500469126174" duration="2167000" />
+      <workItem from="1500471491013" duration="440000" />
+      <workItem from="1500532218591" duration="1325000" />
+      <workItem from="1500534773343" duration="2159000" />
+      <workItem from="1500537329935" duration="1804000" />
+      <workItem from="1500539443873" duration="1960000" />
+      <workItem from="1500541900062" duration="2231000" />
+      <workItem from="1500544188775" duration="1240000" />
+      <workItem from="1500619859076" duration="1658000" />
+      <workItem from="1500621575020" duration="1801000" />
+      <workItem from="1500623421378" duration="1772000" />
+      <workItem from="1500625247987" duration="929000" />
+      <workItem from="1500627794002" duration="1843000" />
+      <workItem from="1500629669837" duration="1384000" />
+      <workItem from="1500637040219" duration="1536000" />
+      <workItem from="1500638888122" duration="1805000" />
+      <workItem from="1500640819774" duration="1934000" />
+      <workItem from="1500643055043" duration="1764000" />
+      <workItem from="1500644997247" duration="1015000" />
+      <workItem from="1500656592631" duration="1447000" />
+      <workItem from="1500658445955" duration="1895000" />
+      <workItem from="1500660381361" duration="1778000" />
+      <workItem from="1500662212671" duration="739000" />
+      <workItem from="1500664066540" duration="1870000" />
+      <workItem from="1500665979809" duration="1165000" />
+      <workItem from="1500706407817" duration="1230000" />
+      <workItem from="1500711285951" duration="1850000" />
+      <workItem from="1500709567970" duration="71000" />
+      <workItem from="1500709660810" duration="1361000" />
+      <workItem from="1500713052524" duration="1926000" />
+      <workItem from="1500715553048" duration="1806000" />
+      <workItem from="1500717404251" duration="1889000" />
+      <workItem from="1500719359798" duration="609000" />
+      <workItem from="1500743334466" duration="446000" />
+      <workItem from="1500743807623" duration="1813000" />
+      <workItem from="1500745653251" duration="1842000" />
+      <workItem from="1500747529241" duration="693000" />
+      <workItem from="1500802765035" duration="1358000" />
+      <workItem from="1500804502165" duration="1872000" />
+      <workItem from="1500806406521" duration="594000" />
+      <workItem from="1500880341561" duration="48000" />
+      <workItem from="1500880439940" duration="13749000" />
+      <workItem from="1501052327177" duration="13555000" />
+      <workItem from="1501090965911" duration="18316000" />
+      <workItem from="1501109849614" duration="587000" />
+      <workItem from="1501135297749" duration="5043000" />
+      <workItem from="1501141964569" duration="6982000" />
+      <workItem from="1501150421680" duration="7016000" />
+      <workItem from="1501157964950" duration="5698000" />
+      <workItem from="1501221559651" duration="3703000" />
+      <workItem from="1501237593402" duration="388000" />
+      <workItem from="1501238006272" duration="11263000" />
+      <workItem from="1501250749948" duration="49000" />
+      <workItem from="1501313222678" duration="12028000" />
+      <workItem from="1501429783240" duration="9149000" />
+      <workItem from="1501482035647" duration="2181000" />
+      <workItem from="1501495596933" duration="6206000" />
+      <workItem from="1501504179445" duration="7723000" />
+      <workItem from="1501574253000" duration="20372000" />
+      <workItem from="1501663369548" duration="5319000" />
+      <workItem from="1502520898177" duration="8553000" />
+      <workItem from="1502692674040" duration="3664000" />
+      <workItem from="1502781713833" duration="6783000" />
+      <workItem from="1502874090189" duration="1415000" />
+      <workItem from="1503049728745" duration="4572000" />
+      <workItem from="1503060336920" duration="4312000" />
+      <workItem from="1503124440030" duration="4939000" />
+      <workItem from="1503129585642" duration="256000" />
+      <workItem from="1503130750985" duration="1662000" />
+      <workItem from="1503323898437" duration="829000" />
+      <workItem from="1503385590743" duration="9544000" />
+      <workItem from="1503471347453" duration="3387000" />
+      <workItem from="1503484294051" duration="4495000" />
+      <workItem from="1503555593432" duration="7137000" />
+      <workItem from="1503645740514" duration="4975000" />
+      <workItem from="1503660540364" duration="1342000" />
+      <workItem from="1503990315831" duration="14514000" />
+      <workItem from="1504076844329" duration="597000" />
+      <workItem from="1504078128692" duration="17697000" />
+      <workItem from="1504162870361" duration="10912000" />
+      <workItem from="1504520104710" duration="1304000" />
+      <workItem from="1505198600446" duration="1017000" />
+      <workItem from="1505200366479" duration="3283000" />
+      <workItem from="1505203815706" duration="14685000" />
+      <workItem from="1505222087198" duration="4595000" />
+      <workItem from="1505284080023" duration="15409000" />
+      <workItem from="1505302113610" duration="9300000" />
+      <workItem from="1505323314507" duration="6664000" />
+      <workItem from="1505373057164" duration="17887000" />
+      <workItem from="1505458341227" duration="15293000" />
+      <workItem from="1505548645008" duration="830000" />
+      <workItem from="1505551847897" duration="1847000" />
+      <workItem from="1505553757234" duration="1944000" />
+      <workItem from="1505555743120" duration="3130000" />
+      <workItem from="1505733369301" duration="7563000" />
+      <workItem from="1505807631243" duration="18893000" />
+      <workItem from="1505890779910" duration="623000" />
+      <workItem from="1505891617403" duration="665000" />
+      <workItem from="1505909376745" duration="7622000" />
+      <workItem from="1506062561742" duration="20694000" />
+      <workItem from="1506149661034" duration="11860000" />
+      <workItem from="1506321820610" duration="5217000" />
+      <workItem from="1506327892877" duration="16384000" />
+      <workItem from="1506407546748" duration="17437000" />
+      <workItem from="1506494931245" duration="18104000" />
+      <workItem from="1506518780913" duration="908000" />
+      <workItem from="1506580593929" duration="6897000" />
+      <workItem from="1506588368190" duration="985000" />
+      <workItem from="1506589940751" duration="8698000" />
+      <workItem from="1506684822942" duration="595000" />
+      <workItem from="1506754877883" duration="5705000" />
+      <workItem from="1506926260522" duration="1693000" />
+      <workItem from="1506943542656" duration="650000" />
+      <workItem from="1506944831797" duration="1534000" />
+      <workItem from="1507013332284" duration="19412000" />
+      <workItem from="1507099310263" duration="6443000" />
+      <workItem from="1507107564069" duration="15455000" />
+      <workItem from="1507185214364" duration="12705000" />
+      <workItem from="1507271462351" duration="8181000" />
+      <workItem from="1507284759631" duration="6701000" />
+      <workItem from="1507293281250" duration="5419000" />
+      <workItem from="1507357773290" duration="15556000" />
+      <workItem from="1507373410930" duration="1048000" />
+      <workItem from="1507532841640" duration="19842000" />
+      <workItem from="1507617983782" duration="18826000" />
+      <workItem from="1507643941319" duration="409000" />
+      <workItem from="1507793014225" duration="11769000" />
+      <workItem from="1507877823813" duration="12592000" />
+      <workItem from="1507896439176" duration="56000" />
+      <workItem from="1507896576678" duration="5539000" />
+      <workItem from="1508077578392" duration="615000" />
+      <workItem from="1508139497421" duration="2244000" />
+      <workItem from="1508317361445" duration="5203000" />
+      <workItem from="1508325122092" duration="5847000" />
+      <workItem from="1508396462229" duration="641000" />
+      <workItem from="1508405457015" duration="820000" />
+      <workItem from="1508408642364" duration="154000" />
+      <workItem from="1508410589513" duration="584000" />
+      <workItem from="1508486276369" duration="655000" />
+      <workItem from="1514281190817" duration="34000" />
+      <workItem from="1514281301341" duration="685000" />
+      <workItem from="1514287518463" duration="1515000" />
+      <workItem from="1514289422870" duration="1485000" />
+      <workItem from="1514298659540" duration="1721000" />
+      <workItem from="1514301180700" duration="820000" />
+      <workItem from="1514303099206" duration="1796000" />
+      <workItem from="1514305104710" duration="26000" />
+      <workItem from="1514361999807" duration="1770000" />
+      <workItem from="1514364130347" duration="596000" />
+      <workItem from="1514366554433" duration="1931000" />
+      <workItem from="1514368560881" duration="598000" />
+      <workItem from="1514372532774" duration="1822000" />
+      <workItem from="1514377913008" duration="1610000" />
+      <workItem from="1514379803925" duration="1808000" />
+      <workItem from="1514382087264" duration="1730000" />
+      <workItem from="1514384334392" duration="1667000" />
+      <workItem from="1514454533831" duration="1654000" />
+      <workItem from="1514456599792" duration="596000" />
+      <workItem from="1514460410809" duration="1763000" />
+      <workItem from="1514880268238" duration="2040000" />
+      <workItem from="1514882855167" duration="1775000" />
+      <workItem from="1514885254839" duration="1772000" />
+      <workItem from="1514887197935" duration="2066000" />
+      <workItem from="1514891815632" duration="1754000" />
+      <workItem from="1514893706959" duration="2050000" />
+      <workItem from="1514895904655" duration="1779000" />
+      <workItem from="1514897930151" duration="1951000" />
+      <workItem from="1514900016938" duration="1559000" />
+      <workItem from="1514901992763" duration="1896000" />
+      <workItem from="1514904107733" duration="2036000" />
+      <workItem from="1514906229782" duration="1802000" />
+      <workItem from="1514908212212" duration="158000" />
+      <workItem from="1514965433660" duration="25998000" />
+      <workItem from="1515053226062" duration="7392000" />
+      <workItem from="1515146491422" duration="10161000" />
+      <workItem from="1515396896159" duration="23626000" />
+      <workItem from="1515485379882" duration="595000" />
+      <workItem from="1515490588078" duration="1239000" />
+      <workItem from="1515744438927" duration="14132000" />
+      <workItem from="1516090098603" duration="3210000" />
+      <workItem from="1516102704036" duration="4431000" />
+      <workItem from="1516267841717" duration="1248000" />
+      <workItem from="1517409292370" duration="592000" />
+      <workItem from="1517409939566" duration="1588000" />
+      <workItem from="1517472633022" duration="1904000" />
+      <workItem from="1517827797425" duration="1642000" />
+      <workItem from="1517829625440" duration="2015000" />
+      <workItem from="1517834573374" duration="832000" />
+      <workItem from="1517836978494" duration="445000" />
+      <workItem from="1517839425154" duration="1451000" />
+      <workItem from="1517906819675" duration="65007000" />
+      <workItem from="1518162596259" duration="54499000" />
+      <workItem from="1518783579881" duration="13533000" />
+      <workItem from="1518958007572" duration="9565000" />
+      <workItem from="1519120397762" duration="10066000" />
+      <workItem from="1519198971666" duration="31464000" />
+      <workItem from="1519314508709" duration="19966000" />
+      <workItem from="1519636348468" duration="10355000" />
+      <workItem from="1519718970457" duration="45116000" />
+      <workItem from="1519903310485" duration="1899000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3153837000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="1" width="1378" height="734" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31031868" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.396072" sideWeight="0.5132939" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43023255" sideWeight="0.48670605" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="479" y="284" width="407" height="159" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.49121523" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="11" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Form/GroupeType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Groupe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="33" column="20" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="33" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Niveau.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="60" selection-start-column="3" selection-end-line="71" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Professionel/MsgErreurModif.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="32" column="38" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="32" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Form/ProfessionelEditType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="36" column="24" lean-forward="false" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Form/ProfessionelFileEditType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Payement/recu.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="12" column="82" lean-forward="false" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Professionel/modifier.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="56" column="59" lean-forward="false" selection-start-line="56" selection-start-column="59" selection-end-line="56" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/metronic-454/metronic-454/themeforest-4021469-metronic-responsive-admin-dashboard-template/metronic_v4.5.4/theme/admin_4/ui_modals.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="1623" column="38" lean-forward="false" selection-start-line="1623" selection-start-column="38" selection-end-line="1642" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Professionel/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="67" selection-start-column="47" selection-end-line="69" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Professionel/consulte.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/LocationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="74" column="20" lean-forward="false" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Location/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="79" column="43" lean-forward="false" selection-start-line="71" selection-start-column="32" selection-end-line="79" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Form/VilleType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Ville.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="40" column="6" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Association.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <folding>
+            <marker date="1519822516134" expanded="true" signature="244:9412" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Particulier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="113" column="41" lean-forward="false" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Form/LocationType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/VenteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="70" column="85" lean-forward="false" selection-start-line="70" selection-start-column="79" selection-end-line="70" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Location.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-213">
+          <caret line="61" column="49" lean-forward="false" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Professionel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="78" column="61" lean-forward="false" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Entity/Vente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Location/consulte.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="115" lean-forward="false" selection-start-line="26" selection-start-column="115" selection-end-line="26" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Location/modifier.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="62" lean-forward="false" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/metronic-454/metronic-454/themeforest-4021469-metronic-responsive-admin-dashboard-template/metronic_v4.5.4/theme/admin_4/table_datatables_managed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="1667" column="50" lean-forward="false" selection-start-line="1647" selection-start-column="43" selection-end-line="1667" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Professionel/ajouter.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="573" column="50" lean-forward="false" selection-start-line="573" selection-start-column="50" selection-end-line="573" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Vente/consulte.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="54" column="56" lean-forward="false" selection-start-line="54" selection-start-column="56" selection-end-line="54" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/inscription.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Form/ProfessionelType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Vente/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="40" column="59" lean-forward="false" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Vente/modifier.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="152" column="38" lean-forward="false" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Location/ajouter.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="32" column="40" lean-forward="false" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Form/EtudiantType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="55" column="44" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="55" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Vente/ajouter.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="117" column="147" lean-forward="false" selection-start-line="117" selection-start-column="147" selection-end-line="117" selection-end-column="147" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Form/VenteType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+          <folding>
+            <element signature="e#44#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/FrontBundle/Resources/views/Front.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa12668.4259/Front.html.twig" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa12668.8082/layout.html.twig" />
+    <entry file="file://$PROJECT_DIR$/../../agenceee/agence/immeublaire/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/metronic-454/metronic-454/themeforest-4021469-metronic-responsive-admin-dashboard-template/metronic_v4.5.4/theme/admin_4/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="41" column="118" lean-forward="false" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../test_sockets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="205" column="4" lean-forward="false" selection-start-line="205" selection-start-column="4" selection-end-line="205" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Faculte/AdminBundle/Controller/ProfessionelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3589">
+          <caret line="268" column="56" lean-forward="false" selection-start-line="268" selection-start-column="56" selection-end-line="268" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

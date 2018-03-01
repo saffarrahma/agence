@@ -1,0 +1,308 @@
+{% extends "FaculteAdminBundle::layout.html.twig"%}
+
+{% block content %}
+    <div class="page-content">
+        <!-- BEGIN BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="{{ path('faculte_admin_homepage') }}">Accueil</a> /
+                </li>
+                <li>
+                    <a href="{{ path('faculte_admin_professionels') }}">liste des Professionels</a> /
+                </li>
+                <li class="active">Modifier les informations de l'professionel</li>
+            </ol>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <!-- BEGIN PAGE BASE CONTENT -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN PORTLET-->
+                <div class="portlet light form-fit bordered">
+                    <div class="portlet-title">
+                        <div class="primary-link ">
+                            <i class="fa fa-edit font-green  "></i>
+                            <span class="caption-subject font-green ">Formulaire de modification</span>
+                        </div>
+                    </div>
+                    <!-- BEGIN SAMPLE FORM PORTLET-->
+
+                    <div class="portlet-body form ">
+                        <form  enctype="multipart/form-data" class="form-horizontal"action="{{ path('faculte_admin_modifier',{'id':Professionel.id}) }}"   method="POST" role="form">
+
+                            <div class="form-body col-md-9">
+                                <div class="form-group form-md-line-input form-md-floating-label">
+                                    <div class="col-md-12 text-center" style="color:red;">
+                                        <b>
+                                            {{ form_errors(form) }}
+                                            {{ form_errors(form2) }}
+                                        </b>
+                                    </div>
+                                </div>
+                                <div class="portlet-body form">
+                                    <!-- BEGIN FORM-->
+                                    <div class="form-body">
+                                        <label style="margin-left: 5%;color: green;margin-top:-25px;font-size: x-large"> <i class="fa fa-pencil "></i> Identification</label><br><br>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label">Login <span style="color: red">*</span></label>
+                                                    <div class="col-md-8.5">
+                                                        <div class="input-group">
+                                                                    <span class="input-group-addon input-circle-left">
+                                                                        <i class="fa fa-key"></i>
+                                                                    </span>
+                                                            {{ form_widget(form2.username,{'attr': {'class': 'form-control','placeholder':'Login' }} ) }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label">Email <span style="color: red">*</span></label>
+                                                    <div class="col-md-8.5">
+                                                        <div class="input-group">
+                                                            {{ form_widget(form2.email,{'attr': {'class': 'form-control','placeholder':'Email' }} ) }}
+                                                            <span class="input-group-addon input-circle-right">
+                                                                        <i class="fa fa-envelope"></i>
+                                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div><br>
+                                        <!--/row-->
+                                        <label style="margin-left: 5%;color: green;font-size: x-large"> <i class="fa fa-pencil "></i> Formulaire d'inscription</label><br><br>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label">Dénomination <span style="color: red">*</span></label>
+                                                    <div class="col-md-8.5">
+                                                        <div class="input-group">
+                                                                    <span class="input-group-addon input-circle-left">
+                                                                        <i class="fa fa-user"></i>
+                                                                    </span>
+                                                            {{ form_widget(form.denomination,{'attr': {'class': 'form-control','placeholder':' Dénomination ' }} ) }} </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label">Représenté par <span style="color: red">*</span></label>
+                                                    <div class="col-md-8.5">
+                                                        <div class="input-group">
+                                                            {{ form_widget(form.presenter,{'attr': {'class': 'form-control','placeholder':'Représenté par' }} ) }}
+                                                            <span class="input-group-addon input-circle-right">
+                                                                        <i class="fa fa-user"></i>
+                                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label">Matricule <span style="color: red">*</span></label>
+                                                    <div class="col-md-8.5">
+                                                        <div class="input-group">
+                                                                    <span class="input-group-addon input-circle-left">
+                                                                        <i class="fa fa-car"></i>
+                                                                    </span>
+                                                            {{ form_widget(form.matricule,{'attr': {'class': 'form-control','placeholder':'Matricule' }} ) }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label">Organisation <span style="color: red">*</span></label>
+                                                    <div class="col-md-8.5">
+                                                        <div class="input-group">
+                                                            {{ form_widget(form.organisation,{'attr': {'class': 'form-control','placeholder':'Organisation' }} ) }}
+                                                            <span class="input-group-addon input-circle-right">
+                                                                        <i class="fa fa-globe"></i>
+                                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label">Région <span style="color: red">*</span></label>
+                                                    <div class="col-md-8.5">
+                                                        <div class="input-group">
+                                                                    <span class="input-group-addon input-circle-left">
+                                                                     <i class="fa fa-map-o"></i>
+                                                                    </span>
+                                                            {{ form_widget(form.region,{'attr': {'class': 'form-control','placeholder':'Région' }} ) }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label">Adresse <span style="color: red">*</span></label>
+                                                    <div class="col-md-8.5">
+                                                        <div class="input-group">
+                                                            {{ form_widget(form.adresse,{'attr': {'class': 'form-control','placeholder':'Adresse' }} ) }}
+                                                            <span class="input-group-addon input-circle-right">
+                                                                        <i class="fa fa-map-marker"></i>
+                                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label">Ville <span style="color: red">*</span></label>
+                                                    <div class="col-md-8.5">
+                                                        <div class="input-group">
+                                                                    <span class="input-group-addon input-circle-left">
+                                                                           <i class="fa fa-map-marker"></i>
+                                                                    </span>
+                                                            {{ form_widget(form.ville,{'attr': {'class': 'form-control','placeholder':'Ville' }} ) }}
+                                                        </div>
+                                                        <div>
+                                                            <td>{{ form_errors(form.telephone) }}</td>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label">Télephone <span style="color: red">*</span></label>
+                                                    <div class="col-md-8.5">
+                                                        <div class="input-group">
+                                                            {{ form_widget(form.telephone,{'attr': {'class': 'form-control','placeholder':'Télephone' }} ) }}
+                                                            <span class="input-group-addon input-circle-right">
+                                                                        <i class="fa fa-phone"></i>
+                                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><br><br>
+                                        <!--/row-->
+                                        <label style="margin-left: 5%;color: green;font-size: x-large"> <i class="fa fa-pencil "></i> Formulaire  optional</label><br><br>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label">Code Postal </label>
+                                                    <div class="col-md-8.5">
+                                                        <div class="input-group">
+                                                                    <span class="input-group-addon input-circle-left">
+                                                                        <i class="fa fa-cc"></i>
+                                                                    </span>
+                                                            {{ form_widget(form.codepostal,{'attr': {'class': 'form-control','placeholder':'Code Postal' }} ) }}
+                                                        </div>
+                                                        <div>
+                                                            <td>{{ form_errors(form.telephone) }}</td>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label">Portable</label>
+                                                    <div class="col-md-8.5">
+                                                        <div class="input-group">
+                                                            {{ form_widget(form.portable,{'attr': {'class': 'form-control','placeholder':'Portable' }} ) }}
+                                                            <span class="input-group-addon input-circle-right">
+                                                                      <i class="fa fa-mobile-phone "></i>
+                                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="col-md-4 control-label">Fax</label>
+                                                    <div class="col-md-8.5">
+                                                        <div class="input-group">
+                                                                    <span class="input-group-addon input-circle-left">
+                                                                      <i class="fa fa-fax"></i>
+                                                                    </span>
+                                                            {{ form_widget(form.fax,{'attr': {'class': 'form-control','placeholder':'Fax' }} ) }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <div class="form-group">
+                                                            <a href="#modal-modif{{ Professionel.id}}" id="lien-modal{{ Professionel.id }}"
+                                                               data-toggle="modal"> <label class="col-md-4 control-label" style="margin-left: 12%">Logo de sociéte</label></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        {{ form_rest(form) }}
+                                        {{ form_rest(form2) }}
+                                    </div>
+                                    <!-- END FORM-->
+                                </div>
+                            </div>
+                            <div class="form-actions ">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button type="submit" class="btn green"><i class="fa fa-check"></i> Mettre à jour</button>
+                                    <button type="button" class="btn default" onclick='location.href="{{ path('faculte_admin_professionels') }}"'>Annuler</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- END SAMPLE FORM PORTLET-->
+                </div>
+                <!-- END PORTLET-->
+            </div>
+        </div>
+        <!-- END PAGE BASE CONTENT -->
+    </div>
+    <div id="modal-modif{{ Professionel.id}}" class="modal fade" role="dialog" aria-labelledby="myModalLabel10" aria-hidden="true">
+        <div class="modal-dialog" id="modal-professionel">
+        </div>
+    </div>
+{% endblock %}
+{% block js %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#lien-modal{{ Professionel.id }}").click(function () {
+                $.ajax
+                ({
+                    type: "POST",
+                    url: "{{ path('faculte_admin_modifier_professionel_file',{'id':Professionel.id})}}",
+                    // data: dataString,
+                    success: function (response) {
+                        $("#modal-professionel").html(response);
+                    }
+                });
+            });
+
+        });
+    </script>
+{% endblock %}

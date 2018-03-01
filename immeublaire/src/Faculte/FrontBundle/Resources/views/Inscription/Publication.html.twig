@@ -1,0 +1,102 @@
+{% extends 'CommentaireInscr.html.twig' %}
+{% block content %}
+
+<!--========== PROMO BLOCK ==========-->
+<div class="g-fullheight--xs js__parallax-window"
+     style="background: url({{ asset('bundles/facultefront/img/1920x1080/11.jpg') }}) 50% 0 no-repeat fixed; background-size: cover;">
+</div>
+<!--========== END PROMO BLOCK ==========-->
+<!--========== PAGE CONTENT ==========-->
+<!-- About -->
+<br><br>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css"/>
+<div class="container">
+    <div class="well">
+        <div class="media">
+            <div class="media-body">
+                <h4 class="media-heading">
+                    <div class="g-width-100-percent--xs g-width-400--md g-margin-b-40--xs">
+                        <h2 class="g-font-size-32--xs g-font-size-36--md g-font-family--playfair g-margin-b-20--xs">
+                            <i><u>Titre:</u></i>
+                            <p class="g-font-size-16--sm" style="margin-top:5%">{{ publiers.titre }}</p></h2>
+                        <h2 class="g-font-size-32--xs g-font-size-36--md g-font-family--playfair g-margin-b-20--xs">
+                            <i><u>Discription:</u></i>
+                            <p class="g-font-size-16--sm" style="margin-top:7%">{{ publiers.description }}</p></h2>
+                    </div>
+                </h4>
+                <div class=" col-xs-6 col-xs-offset-3 g-full-width--xs g-full-width-offset-0--xs g-hor-centered-row__col"
+                     style="margin-left: 50%;margin-top:-20%">
+                    <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
+                        <img class="img-responsive"
+                             src="{{ asset('files/publier/'~publiers.id~'/'~publiers.pathFile) }}" alt="Image">
+                    </div>
+                </div>
+                <ul class="list-inline list-unstyled">
+                    <li>
+                        <span><i class="glyphicon glyphicon-calendar"></i> {{ publiers.dateAjout|date('d-m-Y') }}  </span>
+                    </li>
+                    <li>|</li>
+                    {% set NbrCommentaire = 0 %}
+                    {% for u in comms %}
+                        {% if  u.Publication == publiers.id %}
+                            {% set NbrCommentaire = NbrCommentaire+1 %}
+                        {% endif %}
+                    {% endfor %}
+                    <span> <i class="glyphicon glyphicon-comment"></i>
+                comments</span><span>({{ NbrCommentaire }})</span>
+                    <li>|</li>
+                    <li>
+                        <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
+                        <span><i class="fa fa-facebook-square"></i></span>
+                        <span><i class="fa fa-twitter-square"></i></span>
+                        <span><i class="fa fa-google-plus-square"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+   <span><i class="glyphicon glyphicon-comment"></i>
+       <!-- Our Special dropdown has class show-on-hover -->
+        <div class="btn-group show-on-hover" style="padding:10px;
+        .show-on-hover:hover > ul.dropdown-menu { display: block;}">
+          <a class="btn btn-default"  href="{{ path('fos_user_security_login')}}">
+            Commentaires <span class="caret"></span>
+          </a>
+        </div>
+   </span>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Commentaire :</h3>
+            </div><!-- /col-sm-12 -->
+        </div><!-- /row -->
+        {% for c in comms %}
+            {% if  c.Publication == publiers.id %}
+                <figure class="snip1139">
+                    <blockquote>
+                        <a href="javascript:;" class="name"> Ajouté le : </a>
+                        <span class="datetime"> {{ c.dateAjout|date('d-m-Y') }} </span><br>
+                        <span class="body">  {{ c.Commentaire }}</span>
+                        <div class="arrow"></div>
+                    </blockquote>
+                    <img src="{{ asset('files/commentaire/'~c.id~'/'~c.pathFile) }}" alt="sample3"/>
+                    <div class="author">
+                        <a href="{{ path('faculte_front_modifier_publier',{'idPublier':c.id}) }}">
+                            <h5>{{ c.nom }}  {{ c.prenom }}</h5></a>
+                    </div>
+                </figure>
+            {% endif %}
+        {% endfor %}
+
+
+    </div><!-- /container -->
+
+
+</div><!-- /container -->
+
+<!--========== END PAGE CONTENT ==========-->
+
+{% endblock %}

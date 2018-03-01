@@ -1,0 +1,168 @@
+{% extends "FaculteAdminBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="page-content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="{{ path('faculte_admin_homepage') }}">Accueil</a> /
+                        </li>
+                        <li>
+                            <a href="{{ path('faculte_admin_professionels') }}">Liste des Professionels</a> /
+                        </li>
+                        <li class="active"> Profil de sociéte</li>
+                    </ol>
+                </div>
+                <!-- BEGIN PROFILE CONTENT -->
+                <div class="profile-content">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="portlet light portlet-fit bordered">
+                                <div class="portlet-body">
+                                    <div class="mt-element-list">
+                                        <div class="mt-list-head list-news green-haze" style="background-color: #44b6ae">
+                                                    <div class="list-head-title-container">
+                                                        <h3 class="list-title" style="color: white">Formulaire d'inscription</h3>
+                                                    </div>
+                                        </div>
+                                        <div class="mt-list-container list-default">
+                                            <ul>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Date de création : </strong> {{ professionel.dateCreation|date('d-m-Y') }}
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Sociéte: </strong>  {{professionel.denomination}}
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Représenté par : </strong>  {{professionel.presenter }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Matricule : </strong>  {{professionel.matricule }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Organisation : </strong> {{professionel.organisation }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Adresse : </strong> {{professionel.adresse }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Ville : </strong>  {{professionel.ville }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Télephone: </strong>  {{professionel.telephone }}<br><br>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="portlet light portlet-fit bordered">
+                                <div class="portlet-body">
+                                    <div class="mt-element-list">
+                                        <div class="mt-list-head list-news font-white bg-blue">
+                                            <div class="list-head-title-container">
+                                                <h3 class="list-title">Formulaire Optional</h3>
+                                            </div>
+                                        </div>
+                                        <div class="mt-list-container list-news">
+                                            <ul>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Code postal : </strong>
+                                                    {% if professionel.codepostal is empty %}
+                                                        Vide
+                                                    {% else %}
+                                                        {{professionel.codepostal }}
+                                                    {% endif %}
+                                                    <br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Portable : </strong>
+                                                    {% if professionel.portable  is empty %}
+                                                        Vide
+                                                    {% else %}
+                                                        {{professionel.portable }}
+                                                    {% endif %}
+                                                    <br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Fax :</strong>
+                                                    {% if professionel.fax is empty %}
+                                                        Vide
+                                                    {% else %}
+                                                        {{professionel.fax }}
+                                                    {% endif %}
+                                                    <br><br>
+                                                </li>
+                                                <!-- BEGIN PROFILE SIDEBAR -->
+                                                {% if professionel.pathFile is empty %}
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold"> Logo de sociéte : </strong>N'est pas de l'enregistrement
+                                                </li>
+                                                {% else %}
+                                                    <div class="page-content-wrapper">
+                                                        <!-- BEGIN CONTENT BODY -->
+                                                        <div class="page-content">
+                                                            <div id="js-grid-full-width" class="cbp">
+                                                                <div class="cbp-item identity logos">
+                                                                    <a href="{{ asset('files/logoSte/'~professionel.id~'/'~professionel.pathFile) }}"></a>
+                                                                    <a href="{{ asset('files/logoSte/'~professionel.id~'/'~professionel.pathFile) }}" class="cbp-caption cbp-lightbox">
+                                                                        <div class="cbp-caption-defaultWrap">
+                                                                            <img src="{{ asset('files/logoSte/'~professionel.id~'/'~professionel.pathFile) }}" alt=""> </div>
+                                                                        <div class="cbp-caption-activeWrap">
+                                                                            <div class="cbp-l-caption-alignLeft">
+                                                                                <div class="cbp-l-caption-body">
+                                                                                    <div class="cbp-l-caption-title">Logo : {{professionel.nom }} {{ professionel.prenom }}</div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- END CONTENT BODY -->
+                                                    </div>
+                                                {% endif %}
+                                                <!-- END BEGIN PROFILE SIDEBAR -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="portlet light portlet-fit bordered">
+                                <div class="portlet-body">
+                                    <div class="mt-element-list">
+                                        <div class="mt-list-head list-simple font-white bg-red">
+                                            <div class="list-head-title-container">
+                                                <h3 class="list-title">Identification</h3>
+                                            </div>
+                                        </div>
+                                        <div class="mt-list-container list-simple">
+                                            <ul>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Login : </strong> {{professionel.user.username }}
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Email : </strong> {{professionel.user.email }}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PORTLET -->
+
+                </div>
+            </div>
+        </div>
+        <!-- END PROFILE CONTENT -->
+    </div>
+{% endblock %}

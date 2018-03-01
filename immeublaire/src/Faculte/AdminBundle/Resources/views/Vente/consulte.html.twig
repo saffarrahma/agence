@@ -1,0 +1,81 @@
+{% extends "FaculteAdminBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="page-content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="{{ path('faculte_admin_homepage') }}">Accueil</a> /
+                        </li>
+                        <li>
+                            <a href="{{ path('faculte_admin_ventes') }}">Liste des Ventes</a> /
+                        </li>
+                        <li class="active"> Profil de Vente</li>
+                    </ol>
+                </div>
+                <!-- BEGIN PROFILE CONTENT -->
+                <div class="profile-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="portlet light portlet-fit bordered">
+                                <div class="portlet-body">
+                                    <div class="mt-element-list">
+                                        <div class="mt-list-head list-news green-haze" style="background-color: #44b6ae">
+                                                    <div class="list-head-title-container">
+                                                        <h3 class="list-title" style="color: white">Formulaire de vente</h3>
+                                                    </div>
+                                        </div>
+                                        <div class="mt-list-container list-default">
+                                            <ul>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Client: </strong>
+                                                    {% if Vente.particulier is not empty  %}
+                                                        {{Vente.particulier.nom }}
+                                                    {% endif %}
+                                                    {% if Vente.professionel is not empty  %}
+                                                        {{Vente.professionel.denomination }}
+                                                    {% endif %}
+                                                    {% if Vente.association is not empty  %}
+                                                        {{Vente.association.nom }}
+                                                    {% endif %}
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Type: </strong>  {{Vente.type}}
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Source : </strong>  {{Vente.source }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Nombre des pièces  : </strong>
+                                                    {% if Vente.numPiece is not empty  %}
+                                                    <td>{{Vente.numPiece }}</td>
+                                                    {% else %}
+                                                    <td>Vide</td>
+                                                    {% endif %}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Budget : </strong> {{Vente.budget }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Carte : </strong> {{Vente.carte }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Commentaire : </strong>  {{Vente.commentaire }}<br><br>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PORTLET -->
+
+                </div>
+            </div>
+        </div>
+        <!-- END PROFILE CONTENT -->
+    </div>
+{% endblock %}

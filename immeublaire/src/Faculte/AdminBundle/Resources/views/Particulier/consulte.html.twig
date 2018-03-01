@@ -1,0 +1,122 @@
+{% extends "FaculteAdminBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="page-content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="{{ path('faculte_admin_homepage') }}">Accueil</a> /
+                        </li>
+                        <li>
+                            <a href="{{ path('faculte_admin_particuliers') }}">Liste des Particuliers</a> /
+                        </li>
+                        <li class="active"> Profil de particulier</li>
+                    </ol>
+                </div>
+                <!-- BEGIN PROFILE CONTENT -->
+                <div class="profile-content">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="portlet light portlet-fit bordered">
+                                <div class="portlet-body">
+                                    <div class="mt-element-list">
+                                        <div class="mt-list-head list-news green-haze" style="background-color: #44b6ae">
+                                                    <div class="list-head-title-container">
+                                                        <h3 class="list-title" style="color: white">Formulaire d'inscription</h3>
+                                                    </div>
+                                        </div>
+                                        <div class="mt-list-container list-default">
+                                            <ul>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Date de création : </strong> {{ Particulier.dateCreation|date('d-m-Y') }}
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Nom et Prénom : </strong>  {{Particulier.nom }} {{ Particulier.prenom }}
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">CIN : </strong>  {{Particulier.cin }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Date de naissance : </strong>  {{Particulier.dateNaissance }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Lieu de naissance : </strong>  {{Particulier.lieuNaissance }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Région : </strong> {{Particulier.region }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Adresse : </strong> {{Particulier.adresse }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Ville : </strong>  {{Particulier.ville }}<br><br>
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Portable: </strong>  {{Particulier.portable }}<br><br>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="portlet light portlet-fit bordered">
+                                <div class="portlet-body">
+                                    <div class="mt-element-list">
+                                        <div class="mt-list-head list-simple font-white bg-red">
+                                            <div class="list-head-title-container">
+                                                <h3 class="list-title">Identification</h3>
+                                            </div>
+                                        </div>
+                                        <div class="mt-list-container list-simple">
+                                            <ul>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Login : </strong> {{Particulier.user.username }}
+                                                </li>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Email : </strong> {{Particulier.user.email }}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="portlet light portlet-fit bordered">
+                                <div class="portlet-body">
+                                    <div class="mt-element-list">
+                                        <div class="mt-list-head list-news font-white bg-blue">
+                                            <div class="list-head-title-container">
+                                                <h3 class="list-title">Formulaire Optional</h3>
+                                            </div>
+                                        </div>
+                                        <div class="mt-list-container list-news">
+                                            <ul>
+                                                <li class="mt-list-item">
+                                                    <strong class="font-yellow-gold" style="margin-left: 7%">Télephone : </strong>
+                                                    {% if Particulier.telephone is empty %}
+                                                        Vide
+                                                    {% else %}
+                                                        {{Particulier.telephone }}
+                                                    {% endif %}
+                                                    <br><br>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PORTLET -->
+
+                </div>
+            </div>
+        </div>
+        <!-- END PROFILE CONTENT -->
+    </div>
+{% endblock %}

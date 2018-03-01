@@ -1,0 +1,263 @@
+{% extends "FaculteAdminBundle::layout.html.twig"%}
+
+{% block content %}
+    <div class="page-content">
+        <!-- BEGIN BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="{{ path('faculte_admin_homepage') }}">Accueil</a> /
+                </li>
+                <li>
+                    <a href="{{ path('faculte_admin_particuliers') }}">liste des Particuliers</a> /
+                </li>
+                <li class="active">Modifier les informations de l'particulier</li>
+            </ol>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <!-- BEGIN PAGE BASE CONTENT -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN PORTLET-->
+                <div class="portlet light form-fit bordered">
+                    <div class="portlet-title">
+                        <div class="primary-link ">
+                            <i class="fa fa-edit font-green  "></i>
+                            <span class="caption-subject font-green ">Formulaire de modification</span>
+                        </div>
+                    </div>
+                    <!-- BEGIN SAMPLE FORM PORTLET-->
+
+                    <div class="portlet-body form ">
+                        <form  class="form-horizontal" action="{{ path('faculte_admin_modifier_particuliers',{'idPR':Particulier.id}) }}" method="POST" role="form">
+                            <div class="form-body col-md-9">
+                                    <div class="form-group form-md-line-input form-md-floating-label">
+                                        <div class="col-md-12 text-center" style="color:red;">
+                                            <b>
+                                                {{ form_errors(form3) }}
+                                                {{ form_errors(form4) }}
+                                            </b>
+                                        </div>
+                                    </div>
+                                    <div class="portlet-body form">
+                                        <!-- BEGIN FORM-->
+                                        <div class="form-body">
+                                            <label style="margin-left: 5%;color: green;margin-top:-25px;font-size: x-large"> <i class="fa fa-pencil "></i> Identification</label><br><br>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group" >
+                                                        <label class="col-md-4 control-label">Login <span style="color: red">*</span></label>
+                                                        <div class="col-md-8.5">
+                                                            <div class="input-group">
+                                                                    <span class="input-group-addon input-circle-left">
+                                                                        <i class="fa fa-key"></i>
+                                                                    </span>
+                                                                {{ form_widget(form4.username,{'attr': {'class': 'form-control','placeholder':'Login' }} ) }}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">Email <span style="color: red">*</span></label>
+                                                        <div class="col-md-8.5">
+                                                            <div class="input-group">
+                                                                {{ form_widget(form4.email,{'attr': {'class': 'form-control','placeholder':'Email' }} ) }}
+                                                                <span class="input-group-addon input-circle-right">
+                                                                        <i class="fa fa-envelope"></i>
+                                                                    </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                            </div>
+                                            <!--/row-->
+                                          <br>
+                                            <!--/row-->
+                                            <label style="margin-left: 5%;color: green;font-size: x-large"> <i class="fa fa-pencil "></i> Formulaire d'inscription</label><br><br>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">Nom <span style="color: red">*</span></label>
+                                                        <div class="col-md-8.5">
+                                                            <div class="input-group">
+                                                                    <span class="input-group-addon input-circle-left">
+                                                                        <i class="fa fa-user"></i>
+                                                                    </span>
+                                                                {{ form_widget(form3.nom,{'attr': {'class': 'form-control','placeholder':'Nom ' }} ) }} </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">Prénom <span style="color: red">*</span></label>
+                                                        <div class="col-md-8.5">
+                                                            <div class="input-group">
+                                                                {{ form_widget(form3.prenom,{'attr': {'class': 'form-control','placeholder':'Prénom ' }} ) }}
+                                                                <span class="input-group-addon input-circle-right">
+                                                                        <i class="fa fa-user"></i>
+                                                                    </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                            </div>
+                                            <!--/row-->
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">CIN <span style="color: red">*</span></label>
+                                                        <div class="col-md-8.5">
+                                                            <div class="input-group">
+                                                                    <span class="input-group-addon input-circle-left">
+                                                                        <i class="fa fa-car"></i>
+                                                                    </span>
+                                                                {{ form_widget(form3.cin,{'attr': {'class': 'form-control','placeholder':'Carte identifier personnel' }} ) }}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">Date de naissance <span style="color: red">*</span></label>
+                                                        <div class="col-md-8.5">
+                                                            <div class="input-group">
+                                                                {{ form_widget(form3.dateNaissance,{'attr': {'class': 'form-control'},'type':'date'} ) }}
+                                                                <span class="input-group-addon input-circle-right">
+                                                                        <i class="fa fa-globe"></i>
+                                                                    </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                            </div>
+                                            <!--/row-->
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">Région <span style="color: red">*</span></label>
+                                                        <div class="col-md-8.5">
+                                                            <div class="input-group">
+                                                                    <span class="input-group-addon input-circle-left">
+                                                                     <i class="fa fa-map-o"></i>
+                                                                    </span>
+                                                                {{ form_widget(form3.region,{'attr': {'class': 'form-control','placeholder':'Région' }} ) }}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">Adresse <span style="color: red">*</span></label>
+                                                        <div class="col-md-8.5">
+                                                            <div class="input-group">
+                                                                {{ form_widget(form3.adresse,{'attr': {'class': 'form-control','placeholder':'Adresse' }} ) }}
+                                                                <span class="input-group-addon input-circle-right">
+                                                                        <i class="fa fa-map-marker"></i>
+                                                                    </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/row-->
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">Ville <span style="color: red">*</span></label>
+                                                        <div class="col-md-8.5">
+                                                            <div class="input-group">
+                                                                    <span class="input-group-addon input-circle-left">
+                                                                           <i class="fa fa-map-marker"></i>
+                                                                    </span>
+                                                                {{ form_widget(form3.ville,{'attr': {'class': 'form-control','placeholder':'Ville' }} ) }}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">Lieu de naissance <span style="color: red">*</span></label>
+                                                        <div class="col-md-8.5">
+                                                            <div class="input-group">
+                                                                {{ form_widget(form3.lieuNaissance,{'attr': {'class': 'form-control','placeholder':'lieu de naissance' }} ) }}
+                                                                <span class="input-group-addon input-circle-right">
+                                                                        <i class="fa fa-phone"></i>
+                                                                    </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><br><br>
+                                            <!--/row-->
+                                            <label style="margin-left: 5%;color: green;font-size: x-large"> <i class="fa fa-pencil "></i> Formulaire  de contact</label><br><br>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">Télephone</label>
+                                                        <div class="col-md-8.5">
+                                                            <div class="input-group">
+                                                                    <span class="input-group-addon input-circle-left">
+                                                                        <i class="fa fa-cc"></i>
+                                                                    </span>
+                                                                {{ form_widget(form3.telephone,{'attr': {'class': 'form-control','placeholder':'Télephone' }} ) }}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label">Portable <span style="color: red">*</span></label>
+                                                        <div class="col-md-8.5">
+                                                            <div class="input-group">
+                                                                {{ form_widget(form3.portable,{'attr': {'class': 'form-control','placeholder':'Portable' }} ) }}
+                                                                <span class="input-group-addon input-circle-right">
+                                                                      <i class="fa fa-mobile-phone "></i>
+                                                                    </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                            </div>
+                                            <!--/row-->
+                                            {{ form_rest(form3) }}
+                                            {{ form_rest(form4) }}
+                                        </div>
+                                        <!-- END FORM-->
+                                    </div>
+                                </div>
+                                <div class="form-actions ">
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <button type="submit" class="btn green"><i class="fa fa-check"></i> Ajout</button>
+                                        <button type="button" class="btn default" onclick='location.href="{{ path('faculte_admin_particuliers') }}"'>Annuler</button>
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+
+                    <!-- END SAMPLE FORM PORTLET-->
+                </div>
+                <!-- END PORTLET-->
+            </div>
+        </div>
+        <!-- END PAGE BASE CONTENT -->
+    </div>
+{% endblock %}
+{% block js %}
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('select').selectpicker();
+            $('.datepicker').datepicker();
+        });
+    </script>
+{% endblock %}

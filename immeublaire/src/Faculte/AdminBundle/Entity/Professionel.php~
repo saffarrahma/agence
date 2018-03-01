@@ -1,0 +1,223 @@
+<?php
+
+namespace Faculte\AdminBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Professionel
+ * @ORM\HasLifecycleCallbacks
+ * @ORM\Table(name="professionel")
+ * @ORM\Entity(repositoryClass="Faculte\AdminBundle\Repository\ProfessionelRepository")
+ */
+class Professionel
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="denomination", type="string", length=255)
+     */
+    private $denomination;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="presenter", type="string", length=255)
+     */
+    private $presenter;
+
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="organisation", type="string", length=255)
+     */
+    private $organisation;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="matricule", type="string", length=255)
+     */
+    private $matricule;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="adresse", type="string", length=255)
+     */
+    private $adresse;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="codepostal", type="string", length=255,nullable=true)
+     */
+    private $codepostal;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="telephone", type="string", length=255)
+     */
+    private $telephone;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="portable", type="string", length=255,nullable=true)
+     */
+    private $portable;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="fax", type="string", length=255,nullable=true)
+     */
+    private $fax;
+
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_creation", type="datetime")
+     */
+    private $dateCreation;
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="path_file", type="string", length=255,nullable=true)
+     */
+    private $pathFile;
+
+
+    public function getFullPathFilePath() {
+        return null === $this->pathFile ? null : $this->getUploadPathFileRootDir(). $this->pathFile;
+    }
+
+    public function getUploadPathFileRootDir() {
+        // the absolute directory path where uploaded documents should be saved
+        return $this->getTmpUploadPathFileRootDir()."/".$this->getId()."/";
+    }
+
+    public function getTmpUploadPathFileRootDir() {
+        // the absolute directory path where uploaded documents should be saved
+        return __DIR__ . '/../../../../web/files/logoSte/';
+    }
+
+    public function getExtensionPathFile() {
+
+        $name = strtr($this->pathFile->getClientOriginalName(),
+            'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ',
+            'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
+        $name = preg_replace('/([^.a-z0-9]+)/i', '-', $name);
+
+        $ext = strtolower(substr($name, strrpos($name, '.'))); // extension du fichier
+        return  $ext;
+    }
+
+    public function uploadPathFile() {
+
+        // the file property can be empty if the field is not required
+        if (null === $this->pathFile) {
+            return;
+        }
+
+        $name = strtr($this->pathFile->getClientOriginalName(),
+            'ÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ',
+            'AAAAAACEEEEIIIIOOOOOUUUUYaaaaaaceeeeiiiioooooouuuuyy');
+        $name = preg_replace('/([^.a-z0-9]+)/i', '-', $name);
+
+        if(!$this->getId()){
+            $this->pathFile->move($this->getTmpUploadPathFileRootDir(), $name);
+        }else{
+            $this->pathFile->move($this->getUploadPathFileRootDir(), $name);
+        }
+
+        $this->setPathFile($name);
+
+    }
+
+
+    public function movePathFile()
+    {
+        if (null === $this->pathFile) {
+            return;
+        }
+
+        if(!is_dir($this->getUploadPathFileRootDir())){
+            mkdir($this->getUploadPathFileRootDir());
+        }
+        copy($this->getTmpUploadPathFileRootDir().$this->pathFile, $this->getFullPathFilePath());
+        unlink($this->getTmpUploadPathFileRootDir().$this->pathFile);
+    }
+
+    /**
+     * @ORM\PreRemove()
+     */
+    public function removePathFile()
+    {
+        if(file_exists($this->getFullPathFilePath())){
+            unlink($this->getFullPathFilePath());
+            //rmdir($this->getUploadPathFileRootDir());
+        }
+
+    }
+
+    /**************************************/
+    /**
+     * @ORM\OneToOne(targetEntity="User")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     */
+    private $user;
+
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Ville", inversedBy="professionel")
+     * @ORM\JoinColumn(name="ville_id", referencedColumnName="id")
+     */
+    private $ville;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Location", mappedBy="professionel",cascade={"remove"})
+     *
+     */
+    private $locations;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Vente", mappedBy="professionel",cascade={"remove"})
+     *
+     */
+    private $ventes;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->locations = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Convert object to string
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return (string)$this->getDenomination();
+
+    }
+
+}

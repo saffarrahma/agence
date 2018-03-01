@@ -1,0 +1,158 @@
+<?php
+
+namespace Faculte\AdminBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Association
+ *
+ * @ORM\Table(name="association")
+ * @ORM\Entity(repositoryClass="Faculte\AdminBundle\Repository\AssociationRepository")
+ */
+class Association
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=255)
+     */
+    private $nom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="prenom", type="string", length=255)
+     */
+    private $prenom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="NumEnreg", type="string", length=255)
+     */
+    private $numEnreg;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="leaderOff", type="string", length=255)
+     */
+    private $leaderOff;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="activite", type="string", length=255)
+     */
+    private $activite;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="NumSecu", type="string", length=255)
+     */
+    private $numSecu;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="region", type="string", length=255)
+     */
+    private $region;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="adresse", type="string", length=255)
+     */
+    private $adresse;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="ville", type="string", length=255)
+     */
+    private $ville;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tel", type="string", length=255)
+     */
+    private $tel;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="portable", type="string", length=255, nullable=true)
+     */
+    private $portable;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="fax", type="string", length=255)
+     */
+    private $fax;
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_creation", type="datetime")
+     */
+    private $dateCreation;
+/************************************/
+
+    /**
+     * @ORM\OneToOne(targetEntity="User")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     */
+    private $user;
+
+
+    /**
+     * @ORM\OneToMany(targetEntity="Location", mappedBy="association",cascade={"remove"})
+     *
+     */
+    private $locations;
+
+
+    /**
+     * @ORM\OneToMany(targetEntity="Vente", mappedBy="association",cascade={"remove"})
+     *
+     */
+    private $ventes;
+    /**
+     * Convert object to string
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return (string)$this->getNom();
+
+    }
+
+
+
+
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->locations = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+}

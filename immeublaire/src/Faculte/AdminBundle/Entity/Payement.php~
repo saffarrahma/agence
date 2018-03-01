@@ -1,0 +1,225 @@
+<?php
+
+namespace Faculte\AdminBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Payement
+ *
+ * @ORM\Table(name="payement")
+ * @ORM\Entity(repositoryClass="Faculte\AdminBundle\Repository\PayementRepository")
+ */
+class Payement
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="montant", type="string", length=255)
+     */
+    private $montant;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="avance", type="string", length=255)
+     */
+    private $avance;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="datelimite", type="string", length=255)
+     */
+    private $datelimite;
+
+
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Etudiant", inversedBy="payement")
+     * @ORM\JoinColumn(name="etudiant_id", referencedColumnName="id")
+     */
+    private $etudiant;
+
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Filiere", inversedBy="payement")
+     * @ORM\JoinColumn(name="filiere_id", referencedColumnName="id")
+     */
+    private $filiere;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_creation", type="datetime")
+     */
+    private $dateCreation;
+
+
+
+
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set montant
+     *
+     * @param string $montant
+     *
+     * @return Payement
+     */
+    public function setMontant($montant)
+    {
+        $this->montant = $montant;
+
+        return $this;
+    }
+
+    /**
+     * Get montant
+     *
+     * @return string
+     */
+    public function getMontant()
+    {
+        return $this->montant;
+    }
+
+    /**
+     * Set avance
+     *
+     * @param string $avance
+     *
+     * @return Payement
+     */
+    public function setAvance($avance)
+    {
+        $this->avance = $avance;
+
+        return $this;
+    }
+
+    /**
+     * Get avance
+     *
+     * @return string
+     */
+    public function getAvance()
+    {
+        return $this->avance;
+    }
+
+    /**
+     * Set datelimite
+     *
+     * @param string $datelimite
+     *
+     * @return Payement
+     */
+    public function setDatelimite($datelimite)
+    {
+        $this->datelimite = $datelimite;
+
+        return $this;
+    }
+
+    /**
+     * Get datelimite
+     *
+     * @return string
+     */
+    public function getDatelimite()
+    {
+        return $this->datelimite;
+    }
+
+    /**
+     * Set dateCreation
+     *
+     * @param \DateTime $dateCreation
+     *
+     * @return Payement
+     */
+    public function setDateCreation($dateCreation)
+    {
+        $this->dateCreation = $dateCreation;
+
+        return $this;
+    }
+
+    /**
+     * Get dateCreation
+     *
+     * @return \DateTime
+     */
+    public function getDateCreation()
+    {
+        return $this->dateCreation;
+    }
+
+    /**
+     * Set etudiant
+     *
+     * @param \Faculte\AdminBundle\Entity\Etudiant $etudiant
+     *
+     * @return Payement
+     */
+    public function setEtudiant(\Faculte\AdminBundle\Entity\Etudiant $etudiant = null)
+    {
+        $this->etudiant = $etudiant;
+
+        return $this;
+    }
+
+    /**
+     * Get etudiant
+     *
+     * @return \Faculte\AdminBundle\Entity\Etudiant
+     */
+    public function getEtudiant()
+    {
+        return $this->etudiant;
+    }
+
+    /**
+     * Set filiere
+     *
+     * @param \Faculte\AdminBundle\Entity\Filiere $filiere
+     *
+     * @return Payement
+     */
+    public function setFiliere(\Faculte\AdminBundle\Entity\Filiere $filiere = null)
+    {
+        $this->filiere = $filiere;
+
+        return $this;
+    }
+
+    /**
+     * Get filiere
+     *
+     * @return \Faculte\AdminBundle\Entity\Filiere
+     */
+    public function getFiliere()
+    {
+        return $this->filiere;
+    }
+}

@@ -1,0 +1,53 @@
+{% extends "FaculteAdminBundle::layout.html.twig" %}
+
+{% block content %}
+    <div class="page-content">
+        <!-- BEGIN BREADCRUMBS -->
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="{{ path('faculte_admin_homepage') }}">Accueil</a> /
+                </li>
+                <li>
+                    <a href="{{ path('faculte_admin_professionels') }}">liste des Professionels</a> /
+                </li>
+                <li class="active">Modifier les informations de la professionel</li>
+            </ol>
+        </div>
+        <!-- END BREADCRUMBS -->
+        <!-- BEGIN PAGE BASE CONTENT -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN PORTLET-->
+                <div class="portlet light form-fit bordered">
+                    <!-- BEGIN SAMPLE FORM PORTLET-->
+
+                    <div class="portlet-body form " style="margin-top: 2%">
+                        <div class="profile-content">
+                            <div class="col-md-8">
+                                <div class="alert alert-danger">
+                                    <strong> Attention !! </strong>
+                                    {%if errorProfessionel is defined  %}
+                                        {{ errorProfessionel }}
+                                    {% endif %}
+                                </div>
+                                <div class="portlet-title">
+                                    <div class="col-md-2">
+                                    <div class="caption font-dark">
+                                        <a  class="btn green-sharp btn-outline  btn-block "  href="{{ path('faculte_admin_modifier',{'id':Professionel.id}) }}"> ❮ return</a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END PORTLET -->
+                        </div>
+                    </div><br><br><br>
+
+                    <!-- END SAMPLE FORM PORTLET-->
+                </div>
+                <!-- END PORTLET-->
+            </div>
+        </div>
+        <!-- END PAGE BASE CONTENT -->
+    </div>
+{% endblock %}
